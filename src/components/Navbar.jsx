@@ -18,8 +18,8 @@ const Navbar = () => {
       </div>
       <div>
         <ul className="flex justify-center items-center">
-          <li className="p-2 flex mr-4 mt-2">
-            <input type="search" placeholder="Ara" className="border-b-2 " />
+          <li className="p-2 flex mr-4 border-b-2">
+            <input type="search" placeholder="Ara" />
             <img className="w-full h-full " src={Search} alt="" />
           </li>
           <li className="flex flex-col items-center justify-center text-center mr-8">
