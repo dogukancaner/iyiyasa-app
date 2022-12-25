@@ -11,7 +11,7 @@ import { BiChevronDown } from "react-icons/bi";
 
 const Navbar = () => {
   return (
-    <div className="flex justify-center items-center p-2 border-b-2">
+    <div className="flex justify-center items-center p-4 border-b-2">
       <div className="flex p-4">
         <img className="mr-4 w-full h-full" src={Logo1} alt="" />
         <img className="mr-4 w-full h-full" src={Logo2} alt="" />
