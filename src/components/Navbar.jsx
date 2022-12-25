@@ -22,21 +22,21 @@ const Navbar = () => {
             <input type="search" placeholder="Ara" className="border-b-2 " />
             <img className="w-full h-full " src={Search} alt="" />
           </li>
-          <li className="text-center mr-14">
-            <img src={Fitness} className="ml-4" alt="" />
-            <p className="text-md font-medium mt-1">Fitness</p>
+          <li className="flex flex-col items-center justify-center text-center mr-8">
+            <img src={Fitness} alt="" />
+            <p className="text-md font-medium mt-1">Eğitmenler</p>
           </li>
-          <li className="text-center mr-14">
-            <img src={OzelSeri} className="ml-4" alt="" />
-            <p className="text-md font-medium mt-1">Fitness</p>
+          <li className="flex flex-col items-center justify-center text-center mr-8">
+            <img src={OzelSeri} alt="" />
+            <p className="text-md font-medium mt-1">Özel Seriler</p>
           </li>
-          <li className="text-center mr-14">
-            <img src={BanaOzel} className="ml-4" alt="" />
-            <p className="text-md font-medium mt-1">Fitness</p>
+          <li className="flex flex-col items-center justify-center text-center mr-8">
+            <img src={BanaOzel} alt="" />
+            <p className="text-md font-medium mt-1">Bana Özel</p>
           </li>
-          <li className="text-center mr-14">
-            <img src={IyıBlog} className="ml-4" alt="" />
-            <p className="text-md font-medium mt-1">Fitness</p>
+          <li className="flex flex-col items-center justify-center text-center mr-8">
+            <img src={IyıBlog} alt="" />
+            <p className="text-md font-medium mt-1">İyi Blog</p>
           </li>
 
           <li className="text-center mr-14 flex">
