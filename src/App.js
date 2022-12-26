@@ -1,4 +1,3 @@
-import { BrowserRouter } from "react-router-dom";
 import Category from "./components/Category";
 import Navbar from "./components/Navbar";
 import Slider from "./components/Slider";
