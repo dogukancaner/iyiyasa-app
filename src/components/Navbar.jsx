@@ -1,12 +1,11 @@
 import React from "react";
-import Logo1 from "./img/logo1.png";
-import Logo2 from "./img/logo2.png";
+import Logo1 from "../img/logo1.png";
+import Logo2 from "../img/logo2.png";
 import { BsSearch } from "react-icons/bs";
-import Search from "./img/search.png";
-import Fitness from "./img/fitness.png";
-import OzelSeri from "./img/ozel-seri.png";
-import BanaOzel from "./img/bana-ozel.png";
-import IyıBlog from "./img/iyi-blog.png";
+import Fitness from "../img/fitness.png";
+import OzelSeri from "../img/ozel-seri.png";
+import BanaOzel from "../img/bana-ozel.png";
+import IyıBlog from "../img/iyi-blog.png";
 
 import { BiChevronDown } from "react-icons/bi";
 
