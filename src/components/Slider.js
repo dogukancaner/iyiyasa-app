@@ -58,42 +58,12 @@ const Slider = () => {
                 <img
                   src={item.image}
                   alt="slider"
-                  className="w-full  object-cover"
+                  className="w-full object-cover"
                 />
               </SwiperSlide>
             );
           })}
         </Swiper>
-        {/* <Swiper
-          spaceBetween={30}
-          centeredSlides={true}
-          autoplay={{
-            delay: 2500,
-            disableOnInteraction: false,
-          }}
-          pagination={{
-            clickable: true,
-          }}
-          navigation={true}
-          modules={[Autoplay, Pagination, Navigation]}
-          className="mySwiper"
-        >
-          <SwiperSlide>
-            <img
-              src="../img/slider-1.jpg"
-              className="w-full h-96 object-cover"
-              alt=""
-            />
-          </SwiperSlide>
-          <SwiperSlide>Slide 2</SwiperSlide>
-          <SwiperSlide>Slide 3</SwiperSlide>
-          <SwiperSlide>Slide 4</SwiperSlide>
-          <SwiperSlide>Slide 5</SwiperSlide>
-          <SwiperSlide>Slide 6</SwiperSlide>
-          <SwiperSlide>Slide 7</SwiperSlide>
-          <SwiperSlide>Slide 8</SwiperSlide>
-          <SwiperSlide>Slide 9</SwiperSlide>
-        </Swiper> */}
       </div>
     </div>
   );
