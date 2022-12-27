@@ -9,7 +9,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 // import required modules
-import { Pagination, Navigation } from "swiper";
+import { Pagination, Navigation, Autoplay } from "swiper";
 
 const sliderObject = [
   {
@@ -32,6 +32,26 @@ const sliderObject = [
     title: "Yulaflı Kakaolu Muhallebi",
     instructor: "Eti Lifalif",
   },
+  {
+    image: ContentSlider1,
+    title: "Yulaflı Kakaolu Muhallebi",
+    instructor: "Eti Lifalif",
+  },
+  {
+    image: ContentSlider1,
+    title: "Yulaflı Kakaolu Muhallebi",
+    instructor: "Eti Lifalif",
+  },
+  {
+    image: ContentSlider1,
+    title: "Yulaflı Kakaolu Muhallebi",
+    instructor: "Eti Lifalif",
+  },
+  {
+    image: ContentSlider1,
+    title: "Yulaflı Kakaolu Muhallebi",
+    instructor: "Eti Lifalif",
+  },
 ];
 
 const Content = () => {
@@ -41,7 +61,49 @@ const Content = () => {
         <h1 className="text-2xl font-bold">İçeriklere Göz At</h1>
         <span>Hepsini Gör</span>
       </div>
-      <div></div>
+      <div>
+        <Swiper
+          className="mt-4"
+          modules={[Pagination, Navigation]}
+          spaceBetween={50}
+          slidesPerView={4}
+          navigation={false}
+          breakpoints={{
+            640: {
+              slidesPerView: 2,
+              spaceBetween: 10,
+            },
+            768: {
+              slidesPerView: 3,
+              spaceBetween: 20,
+            },
+            1024: {
+              slidesPerView: 4,
+              spaceBetween: 30,
+            },
+          }}
+        >
+          {sliderObject.map((item, index) => (
+            <SwiperSlide key={index}>
+              <div className="border-2 border-gray-200 rounded-lg">
+                <div className="flex flex-col items-start">
+                  <img
+                    src={item.image}
+                    alt="content-slider1"
+                    className="w-full h-64 rounded-lg"
+                  />
+                  <div className="pl-4 mb-4 mt-2">
+                    <h1 className="text-x font-bold mt-1 mb-1">{item.title}</h1>
+                    <span className="text-sm text-gray-500  font-medium">
+                      {item.instructor}
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
     </div>
   );
 };
