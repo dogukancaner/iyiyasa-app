@@ -9,7 +9,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 // import required modules
-import { Pagination, Navigation, Autoplay } from "swiper";
+import { Pagination, Navigation } from "swiper";
 
 import { FaChevronRight } from "react-icons/fa";
 import { FaChevronLeft } from "react-icons/fa";
@@ -69,7 +69,7 @@ const Content = () => {
   return (
     <div className="container mx-auto p-4">
       <div className="flex justify-between items-center">
-        <h1 className="text-2xl font-bold">İçeriklere Göz At</h1>
+        <h1 className="text-2xl font-bold">En Yeniler</h1>
         <span>Hepsini Gör</span>
       </div>
       <div>
