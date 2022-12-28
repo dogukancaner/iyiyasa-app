@@ -101,7 +101,7 @@ const Content = () => {
                   <img
                     src={item.image}
                     alt="content-slider1"
-                    className="w-full h-64 rounded-lg"
+                    className="w-full h-64 rounded-lg object-cover"
                   />
                   <span className="absolute left-4 top-4 text-black border-2 p-1 border-transparent rounded-lg text-sm bg-gray-100 font-bold">
                     {item.category}
