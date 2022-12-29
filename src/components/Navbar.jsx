@@ -20,7 +20,7 @@ export default function Index() {
                 <li>
                   <a
                     href="javascript:void(0)"
-                    className="dark:text-black dark:hover:text-gray-300 text-base text-right text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline"
+                    className="dark:text-black text-base text-right text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800"
                   >
                     {" "}
                     Eğitmenler{" "}
@@ -29,7 +29,7 @@ export default function Index() {
                 <li>
                   <a
                     href="javascript:void(0)"
-                    className="dark:text-black dark:hover:text-gray-300 text-base text-right text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline"
+                    className="dark:text-black text-base text-right text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800"
                   >
                     {" "}
                     Özel Seriler{" "}
@@ -38,7 +38,7 @@ export default function Index() {
                 <li>
                   <a
                     href="javascript:void(0)"
-                    className="dark:text-black dark:hover:text-gray-300 text-base text-right text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline"
+                    className="dark:text-black text-base text-right text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800"
                   >
                     {" "}
                     Bana Özel{" "}
@@ -47,7 +47,7 @@ export default function Index() {
                 <li>
                   <a
                     href="javascript:void(0)"
-                    className="dark:text-black dark:hover:text-gray-300 text-base text-right text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline"
+                    className="dark:text-black  text-base text-right text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800"
                   >
                     {" "}
                     İyi Blog{" "}
@@ -57,9 +57,9 @@ export default function Index() {
             </div>
             <div className="hidden md:flex items-center space-x-4">
               <a
-                aria-label="my account"
+                aria-label="Hesabım"
                 href="javascript:void(0)"
-                className="focus:outline-none focus:ring-2 focus:ring-gray-800 hover:bg-gray-100 p-0.5 rounded"
+                className="focus:outline-none focus:ring-2 focus:ring-gray-800  p-0.5 rounded"
               >
                 <svg
                   className="fill-stroke text-gray-800 dark:text-black"
@@ -86,9 +86,9 @@ export default function Index() {
                 </svg>
               </a>
               <a
-                aria-label="Favourites"
+                aria-label="Favoriler"
                 href="javascript:void(0)"
-                className="focus:outline-none focus:ring-2 focus:ring-gray-800 hover:bg-gray-100 p-0.5 rounded"
+                className="focus:outline-none focus:ring-2 focus:ring-gray-800  p-0.5 rounded"
               >
                 <svg
                   className="fill-stroke text-gray-800 dark:text-black"
@@ -108,9 +108,9 @@ export default function Index() {
                 </svg>
               </a>
               <a
-                aria-label="Bag"
+                aria-label="Sepet"
                 href="javascript:void(0)"
-                className="focus:outline-none focus:ring-2 focus:ring-gray-800 hover:bg-gray-100 p-0.5 rounded"
+                className="focus:outline-none focus:ring-2 focus:ring-gray-800 p-0.5 rounded"
               >
                 <svg
                   className="fill-stroke text-gray-800 dark:text-black"
@@ -231,7 +231,7 @@ export default function Index() {
               <button
                 aria-label="close menu"
                 onClick={() => setShowMenu(false)}
-                className="text-gray-800 dark:text-black focus:outline-none focus:ring-2 focus:ring-gray-800"
+                className="text-black focus:outline-none focus:ring-2 focus:ring-gray-800"
               >
                 <svg
                   className="fill-stroke"
@@ -262,14 +262,14 @@ export default function Index() {
               <li className="border-b border-gray-200 dark:border-gray-700 dark:text-gray-700 pb-4 px-1 flex items-center justify-between">
                 <a
                   href="javascript:void(0)"
-                  className="text-black focus:outline-none focus:ring-2 focus:ring-gray-800 text-base text-gray-800 hover:underline"
+                  className="text-black focus:outline-none focus:ring-2 focus:ring-gray-800 text-base "
                 >
                   {" "}
                   Eğitmenler{" "}
                 </a>
                 <button
                   aria-label="Add"
-                  className="text-black text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800 rounded hover:bg-gray-100 dark:hover:bg-gray-700"
+                  className="text-black  focus:outline-none focus:ring-2 focus:ring-gray-800 rounded "
                 >
                   <svg
                     className="fill-stroke"
@@ -297,14 +297,14 @@ export default function Index() {
               <li className="border-b border-gray-200 dark:border-gray-700 dark:text-gray-700 pb-4 px-1 flex items-center justify-between">
                 <a
                   href="javascript:void(0)"
-                  className="text-black focus:outline-none focus:ring-2 focus:ring-gray-800 text-base text-gray-800 hover:underline"
+                  className="text-black focus:outline-none focus:ring-2 focus:ring-gray-800 text-base "
                 >
                   {" "}
                   Özel Seriler{" "}
                 </a>
                 <button
                   aria-label="Add"
-                  className="text-black text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800 rounded hover:bg-gray-100 dark:hover:bg-gray-700"
+                  className="text-black  focus:outline-none focus:ring-2 focus:ring-gray-800 rounded "
                 >
                   <svg
                     className="fill-stroke"
@@ -332,14 +332,14 @@ export default function Index() {
               <li className="border-b border-gray-200 dark:border-gray-700 dark:text-gray-700 pb-4 px-1 flex items-center justify-between">
                 <a
                   href="javascript:void(0)"
-                  className="text-black focus:outline-none focus:ring-2 focus:ring-gray-800 text-base text-gray-800 hover:underline"
+                  className="text-black focus:outline-none focus:ring-2 focus:ring-gray-800 text-base "
                 >
                   {" "}
                   Bana Özel{" "}
                 </a>
                 <button
                   aria-label="Add"
-                  className="text-black text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800 rounded hover:bg-gray-100 dark:hover:bg-gray-700"
+                  className="text-black text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800 rounded "
                 >
                   <svg
                     className="fill-stroke"
@@ -367,14 +367,14 @@ export default function Index() {
               <li className="border-b border-gray-200 dark:border-gray-700 dark:text-gray-700 pb-4 px-1 flex items-center justify-between">
                 <a
                   href="javascript:void(0)"
-                  className="text-black focus:outline-none focus:ring-2 focus:ring-gray-800 text-base text-gray-800 hover:underline"
+                  className="text-black focus:outline-none focus:ring-2 focus:ring-gray-800 text-base"
                 >
                   {" "}
                   İyi Blog{" "}
                 </a>
                 <button
                   aria-label="Add"
-                  className="text-black text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800 rounded hover:bg-gray-100 dark:hover:bg-gray-700"
+                  className="text-black focus:outline-none focus:ring-2 focus:ring-gray-800 rounded "
                 >
                   <svg
                     className="fill-stroke"
