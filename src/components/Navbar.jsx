@@ -20,7 +20,7 @@ export default function Index() {
                 <li>
                   <a
                     href="javascript:void(0)"
-                    className="dark:text-black text-base text-right text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800"
+                    className="text-black font-medium text-lg"
                   >
                     {" "}
                     Eğitmenler{" "}
@@ -29,7 +29,7 @@ export default function Index() {
                 <li>
                   <a
                     href="javascript:void(0)"
-                    className="dark:text-black text-base text-right text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800"
+                    className="text-black font-medium text-lg"
                   >
                     {" "}
                     Özel Seriler{" "}
@@ -38,7 +38,7 @@ export default function Index() {
                 <li>
                   <a
                     href="javascript:void(0)"
-                    className="dark:text-black text-base text-right text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800"
+                    className="text-black font-medium text-lg"
                   >
                     {" "}
                     Bana Özel{" "}
@@ -47,7 +47,7 @@ export default function Index() {
                 <li>
                   <a
                     href="javascript:void(0)"
-                    className="dark:text-black  text-base text-right text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800"
+                    className="text-black font-medium  text-lg"
                   >
                     {" "}
                     İyi Blog{" "}
@@ -55,12 +55,8 @@ export default function Index() {
                 </li>
               </ul>
             </div>
-            <div className="hidden md:flex items-center space-x-4">
-              <a
-                aria-label="Hesabım"
-                href="javascript:void(0)"
-                className="focus:outline-none focus:ring-2 focus:ring-gray-800  p-0.5 rounded"
-              >
+            <div className="hidden md:flex items-center gap-2">
+              <a aria-label="Hesabım" href="javascript:void(0)">
                 <svg
                   className="fill-stroke text-gray-800 dark:text-black"
                   width={18}
@@ -85,11 +81,7 @@ export default function Index() {
                   />
                 </svg>
               </a>
-              <a
-                aria-label="Favoriler"
-                href="javascript:void(0)"
-                className="focus:outline-none focus:ring-2 focus:ring-gray-800  p-0.5 rounded"
-              >
+              <a aria-label="Favoriler" href="javascript:void(0)">
                 <svg
                   className="fill-stroke text-gray-800 dark:text-black"
                   width={22}
@@ -107,11 +99,7 @@ export default function Index() {
                   />
                 </svg>
               </a>
-              <a
-                aria-label="Sepet"
-                href="javascript:void(0)"
-                className="focus:outline-none focus:ring-2 focus:ring-gray-800 p-0.5 rounded"
-              >
+              <a aria-label="Sepet" href="javascript:void(0)">
                 <svg
                   className="fill-stroke text-gray-800 dark:text-black"
                   width={20}
@@ -260,17 +248,11 @@ export default function Index() {
           <div className="mt-4 mx-4">
             <ul className="flex flex-col space-y-4">
               <li className="border-b border-gray-200 dark:border-gray-700 dark:text-gray-700 pb-4 px-1 flex items-center justify-between">
-                <a
-                  href="javascript:void(0)"
-                  className="text-black focus:outline-none focus:ring-2 focus:ring-gray-800 text-base "
-                >
+                <a href="javascript:void(0)" className="text-black  text-lg ">
                   {" "}
                   Eğitmenler{" "}
                 </a>
-                <button
-                  aria-label="Add"
-                  className="text-black  focus:outline-none focus:ring-2 focus:ring-gray-800 rounded "
-                >
+                <button aria-label="Add" className="text-black rounded ">
                   <svg
                     className="fill-stroke"
                     width={16}
@@ -295,17 +277,11 @@ export default function Index() {
                 </button>
               </li>
               <li className="border-b border-gray-200 dark:border-gray-700 dark:text-gray-700 pb-4 px-1 flex items-center justify-between">
-                <a
-                  href="javascript:void(0)"
-                  className="text-black focus:outline-none focus:ring-2 focus:ring-gray-800 text-base "
-                >
+                <a href="javascript:void(0)" className="text-black text-lg ">
                   {" "}
                   Özel Seriler{" "}
                 </a>
-                <button
-                  aria-label="Add"
-                  className="text-black  focus:outline-none focus:ring-2 focus:ring-gray-800 rounded "
-                >
+                <button aria-label="Add" className="text-black  rounded ">
                   <svg
                     className="fill-stroke"
                     width={16}
@@ -330,17 +306,11 @@ export default function Index() {
                 </button>
               </li>
               <li className="border-b border-gray-200 dark:border-gray-700 dark:text-gray-700 pb-4 px-1 flex items-center justify-between">
-                <a
-                  href="javascript:void(0)"
-                  className="text-black focus:outline-none focus:ring-2 focus:ring-gray-800 text-base "
-                >
+                <a href="javascript:void(0)" className="text-black text-lg ">
                   {" "}
                   Bana Özel{" "}
                 </a>
-                <button
-                  aria-label="Add"
-                  className="text-black text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800 rounded "
-                >
+                <button aria-label="Add" className="text-black rounded ">
                   <svg
                     className="fill-stroke"
                     width={16}
@@ -365,17 +335,11 @@ export default function Index() {
                 </button>
               </li>
               <li className="border-b border-gray-200 dark:border-gray-700 dark:text-gray-700 pb-4 px-1 flex items-center justify-between">
-                <a
-                  href="javascript:void(0)"
-                  className="text-black focus:outline-none focus:ring-2 focus:ring-gray-800 text-base"
-                >
+                <a href="javascript:void(0)" className="text-black  text-lg">
                   {" "}
                   İyi Blog{" "}
                 </a>
-                <button
-                  aria-label="Add"
-                  className="text-black focus:outline-none focus:ring-2 focus:ring-gray-800 rounded "
-                >
+                <button aria-label="Add" className="text-black  rounded ">
                   <svg
                     className="fill-stroke"
                     width={16}
@@ -405,7 +369,7 @@ export default function Index() {
             <ul className="bg-gray-50 dark:bg-white py-10 px-4 flex flex-row justify-center gap-4 w-full">
               <li>
                 <a
-                  className="flex items-center space-x-2 focus:outline-none text-gray-800 dark:text-black focus:ring-2 focus:ring-gray-800 hover:underline"
+                  className="flex items-center gap-2"
                   href="javascript:void(0)"
                 >
                   <div>
@@ -438,7 +402,7 @@ export default function Index() {
               </li>
               <li>
                 <a
-                  className="flex items-center space-x-2 focus:outline-none text-gray-800 dark:text-black focus:ring-2 focus:ring-gray-800 hover:underline"
+                  className="flex items-center gap-2"
                   href="javascript:void(0)"
                 >
                   <div>
@@ -478,7 +442,7 @@ export default function Index() {
               </li>
               <li>
                 <a
-                  className="flex items-center space-x-2 text-gray-800 dark:text-black focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline"
+                  className="flex items-center gap-2 "
                   href="javascript:void(0)"
                 >
                   <div>
