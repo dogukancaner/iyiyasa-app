@@ -16,7 +16,7 @@ export default function Index() {
             </div>
             <div className="md:hidden cursor-pointer"></div>
             <div className="hidden md:block">
-              <ul className="flex items-center space-x-6">
+              <ul className="flex items-center gap-12">
                 <li>
                   <a
                     href="javascript:void(0)"
@@ -55,7 +55,7 @@ export default function Index() {
                 </li>
               </ul>
             </div>
-            <div className="hidden md:flex items-center gap-2">
+            <div className="hidden md:flex items-center gap-6">
               <a aria-label="Hesabım" href="javascript:void(0)">
                 <svg
                   className="fill-stroke text-gray-800 dark:text-black"
