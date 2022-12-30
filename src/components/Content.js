@@ -9,7 +9,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 // import required modules
-import { Pagination, Navigation, Autoplay } from "swiper";
+import { Pagination, Navigation } from "swiper";
 
 import { FaChevronRight } from "react-icons/fa";
 import { FaChevronLeft } from "react-icons/fa";
@@ -80,23 +80,23 @@ const Content = () => {
           slidesPerView={4}
           navigation={false}
           breakpoints={{
-            640: {
+            480: {
               slidesPerView: 2,
-              spaceBetween: 10,
+              spaceBetween: 30,
             },
-            768: {
+            640: {
               slidesPerView: 3,
-              spaceBetween: 20,
+              spaceBetween: 40,
             },
             1024: {
               slidesPerView: 4,
-              spaceBetween: 30,
+              spaceBetween: 50,
             },
           }}
         >
           {sliderObject.map((item, index) => (
             <SwiperSlide key={index}>
-              <div className="border-2 border-gray-200 rounded-lg">
+              <div className="border-2  border-gray-200 rounded-lg">
                 <div className="flex flex-col items-start relative">
                   <img
                     src={item.image}
@@ -106,11 +106,11 @@ const Content = () => {
                   <span className="absolute left-4 top-4 text-black border-2 p-1 border-transparent rounded-lg text-sm bg-gray-100 font-bold">
                     {item.category}
                   </span>
-                  <span className="absolute top-52 left-4 text-black border-gray-100  p-1 rounded-lg text-sm bg-gray-100 font-bold">
+                  <span className="absolute top-48 left-4 text-black border-gray-100  p-1 rounded-lg text-sm bg-gray-100 font-bold">
                     15dk
                   </span>
-                  <div className="pl-4 mb-4 mt-2">
-                    <h1 className="text-x font-bold mt-1 mb-1">{item.title}</h1>
+                  <div className="pl-4 h-20 mt-2">
+                    <h1 className="text-x font-bold lg:mb-2">{item.title}</h1>
                     <span className="text-sm text-gray-500  font-medium">
                       {item.instructor}
                     </span>
