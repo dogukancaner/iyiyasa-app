@@ -247,7 +247,7 @@ export default function Index() {
           </div>
           <div className="mt-4 mx-4">
             <ul className="flex flex-col space-y-4">
-              <li className="border-b border-gray-200 dark:border-gray-700 dark:text-gray-700 pb-4 px-1 flex items-center justify-between">
+              <li className="border-b border-black pb-4 px-1 flex items-center justify-between">
                 <a href="javascript:void(0)" className="text-black  text-lg ">
                   {" "}
                   Eğitmenler{" "}
@@ -276,7 +276,7 @@ export default function Index() {
                   </svg>
                 </button>
               </li>
-              <li className="border-b border-gray-200 dark:border-gray-700 dark:text-gray-700 pb-4 px-1 flex items-center justify-between">
+              <li className="border-b border-black pb-4 px-1 flex items-center justify-between">
                 <a href="javascript:void(0)" className="text-black text-lg ">
                   {" "}
                   Özel Seriler{" "}
@@ -305,7 +305,7 @@ export default function Index() {
                   </svg>
                 </button>
               </li>
-              <li className="border-b border-gray-200 dark:border-gray-700 dark:text-gray-700 pb-4 px-1 flex items-center justify-between">
+              <li className="border-b border-black pb-4 px-1 flex items-center justify-between">
                 <a href="javascript:void(0)" className="text-black text-lg ">
                   {" "}
                   Bana Özel{" "}
@@ -334,7 +334,7 @@ export default function Index() {
                   </svg>
                 </button>
               </li>
-              <li className="border-b border-gray-200 dark:border-gray-700 dark:text-gray-700 pb-4 px-1 flex items-center justify-between">
+              <li className="border-b border-black pb-4 px-1 flex items-center justify-between">
                 <a href="javascript:void(0)" className="text-black  text-lg">
                   {" "}
                   İyi Blog{" "}
@@ -366,7 +366,7 @@ export default function Index() {
             </ul>
           </div>
           <div className="w-full h-full flex items-start">
-            <ul className="bg-gray-50 dark:bg-white py-10 px-4 flex flex-row justify-center gap-4 w-full">
+            <ul className=" bg-gray-200 p-12 mt-4 flex flex-row justify-center gap-4 w-full">
               <li>
                 <a
                   className="flex items-center gap-2"

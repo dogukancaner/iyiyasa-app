@@ -9,14 +9,14 @@ const Footer = () => {
       <div className="container mx-auto">
         <div className="flex justify-center items-center lg:justify-between p-6 border-b border-gray-300">
           <div className="mr-12 hidden font-medium lg:block">
-            <span>Sosyal Medya: </span>
+            <span className="text-lg">Sosyal Medya: </span>
           </div>
           <div className="flex justify-center">
             <a href="#!" className="mr-6 text-gray-600">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
+                width="24"
+                height="24"
                 fill="currentColor"
                 className="bi bi-youtube"
                 viewBox="0 0 16 16"
@@ -30,8 +30,9 @@ const Footer = () => {
                 aria-hidden="true"
                 focusable="false"
                 data-prefix="fab"
+                width="24"
+                height="24"
                 data-icon="instagram"
-                className="w-3.5"
                 role="img"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 448 512"
