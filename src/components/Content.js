@@ -9,7 +9,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 // import required modules
-import { Pagination, Navigation } from "swiper";
+import { Pagination } from "swiper";
 
 import { FaChevronRight } from "react-icons/fa";
 import { FaChevronLeft } from "react-icons/fa";
@@ -68,23 +68,20 @@ const sliderObject = [
 const Content = () => {
   return (
     <div className="container mx-auto p-4">
-      <div className="flex justify-between items-center">
+      <div className="flex justify-between items-center mb-2">
         <h1 className="text-2xl font-bold">İçeriklere Göz At</h1>
         <span>Hepsini Gör</span>
       </div>
       <div>
         <Swiper
-          className="mt-4 "
-          modules={[Pagination, Navigation]}
-          spaceBetween={50}
-          slidesPerView={4}
-          navigation={false}
+          slidesPerView={1}
+          spaceBetween={10}
           breakpoints={{
-            480: {
-              slidesPerView: 2,
-              spaceBetween: 30,
-            },
             640: {
+              slidesPerView: 2,
+              spaceBetween: 20,
+            },
+            768: {
               slidesPerView: 3,
               spaceBetween: 40,
             },
@@ -93,6 +90,8 @@ const Content = () => {
               spaceBetween: 50,
             },
           }}
+          modules={[Pagination]}
+          className="mySwiper"
         >
           {sliderObject.map((item, index) => (
             <SwiperSlide key={index}>
