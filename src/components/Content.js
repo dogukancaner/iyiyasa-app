@@ -74,7 +74,7 @@ const Content = () => {
       </div>
       <div>
         <Swiper
-          className="mt-4"
+          className="mt-4 "
           modules={[Pagination, Navigation]}
           spaceBetween={50}
           slidesPerView={4}

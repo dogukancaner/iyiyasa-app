@@ -46,7 +46,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="mx-6 py-10 text-center md:text-left">
-          <div className="flex justify-between">
+          <div className="flex justify-between text-start gap-4 ">
             <div className=" font-medium ">
               <p>Bizimle İletişime Geç</p>
               <p>Sıkça Sorulan Sorular </p>
