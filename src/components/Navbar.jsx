@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Logo1 from "../img/logo1.png";
 import Logo2 from "../img/logo2.png";
 
-export default function Index() {
+export default function Navbar() {
   const [showMenu, setShowMenu] = useState(false);
 
   return (
