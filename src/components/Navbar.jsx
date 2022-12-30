@@ -11,7 +11,7 @@ export default function Navbar() {
         <div className="py-4 mx-4 md:mx-6">
           <div className="flex items-center justify-between border-b border-gray-200 dark:border-gray-700 py-4">
             <div className="flex gap-4 ">
-              <img className="" src={Logo1} alt="" />
+              <img src={Logo1} alt="" />
               <img src={Logo2} alt="" />
             </div>
             <div className="md:hidden cursor-pointer"></div>
@@ -19,26 +19,22 @@ export default function Navbar() {
               <ul className="flex items-center gap-8">
                 <li>
                   <a href="/" className="text-gray-600 font-medium text-lg">
-                    {" "}
-                    Eğitmenler{" "}
+                    Eğitmenler
                   </a>
                 </li>
                 <li>
                   <a href="/" className="text-gray-600 font-medium text-lg">
-                    {" "}
-                    Özel Seriler{" "}
+                    Özel Seriler
                   </a>
                 </li>
                 <li>
                   <a href="/" className="text-gray-600 font-medium text-lg">
-                    {" "}
-                    Bana Özel{" "}
+                    Bana Özel
                   </a>
                 </li>
                 <li>
                   <a href="/" className="text-gray-600 font-medium  text-lg">
-                    {" "}
-                    İyi Blog{" "}
+                    İyi Blog
                   </a>
                 </li>
               </ul>
@@ -46,9 +42,9 @@ export default function Navbar() {
             <div className="hidden md:flex items-center gap-6">
               <a aria-label="Hesabım" href="/">
                 <svg
-                  className="fill-stroke text-gray-600"
-                  width={18}
-                  height={20}
+                  className=" text-gray-600"
+                  width={24}
+                  height={24}
                   viewBox="0 0 18 20"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
@@ -71,9 +67,9 @@ export default function Navbar() {
               </a>
               <a aria-label="Favoriler" href="/">
                 <svg
-                  className="fill-stroke text-gray-600"
-                  width={22}
-                  height={20}
+                  className=" text-gray-600"
+                  width={24}
+                  height={24}
                   viewBox="0 0 22 20"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
@@ -89,9 +85,9 @@ export default function Navbar() {
               </a>
               <a aria-label="Sepet" href="/">
                 <svg
-                  className="fill-stroke text-gray-600"
-                  width={20}
-                  height={22}
+                  className=" text-gray-600"
+                  width={24}
+                  height={24}
                   viewBox="0 0 20 22"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
@@ -127,9 +123,9 @@ export default function Navbar() {
                 className="focus:outline-none focus:ring-2 focus:ring-gray-800 rounded"
               >
                 <svg
-                  className="fill-stroke text-gray-800 dark:text-black"
-                  width={24}
-                  height={24}
+                  className="text-gray-600"
+                  width={32}
+                  height={32}
                   viewBox="0 0 24 24"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
@@ -159,10 +155,10 @@ export default function Navbar() {
               </button>
             </div>
           </div>
-          <div className="mt-4 pb-4 flex space-x-3 border-b border-gray-200 dark:border-gray-700">
+          <div className="mt-4 pb-4 flex gap-4 border-b border-gray-200 dark:border-gray-700">
             <div>
               <svg
-                className="fill-stroke text-gray-600  dark:text-black"
+                className="text-gray-600"
                 width={20}
                 height={20}
                 viewBox="0 0 20 20"
@@ -199,7 +195,7 @@ export default function Navbar() {
           }  md:hidden absolute inset-0 z-10 flex-col w-full h-screen bg-white pt-6`}
         >
           <div className="w-full">
-            <div className="flex items-center justify-between border-b border-gray-200 dark:border-gray-700 pb-3 mx-4">
+            <div className="flex items-center justify-between border-b border-gray-600 pb-3 mx-4">
               <div className="flex gap-4 ">
                 <img className="" src={Logo1} alt="" />
                 <img src={Logo2} alt="" />
@@ -265,12 +261,11 @@ export default function Navbar() {
               </li>
               <li className="border-b border-black pb-4 px-1 flex items-center justify-between">
                 <a href="/" className="font-medium text-lg text-gray-600 ">
-                  {" "}
-                  Özel Seriler{" "}
+                  Özel Seriler
                 </a>
                 <button aria-label="Add" className="text-black   ">
                   <svg
-                    className="fill-stroke"
+                    className=""
                     width={16}
                     height={16}
                     viewBox="0 0 16 16"
@@ -294,12 +289,11 @@ export default function Navbar() {
               </li>
               <li className="border-b border-black pb-4 px-1 flex items-center justify-between">
                 <a href="/" className="font-medium text-lg text-gray-600">
-                  {" "}
-                  Bana Özel{" "}
+                  Bana Özel
                 </a>
                 <button aria-label="Add" className="text-black">
                   <svg
-                    className="fill-stroke"
+                    className=""
                     width={16}
                     height={16}
                     viewBox="0 0 16 16"
@@ -323,12 +317,11 @@ export default function Navbar() {
               </li>
               <li className="border-b border-black pb-4 px-1 flex items-center justify-between">
                 <a href="/" className="font-medium text-lg text-gray-600">
-                  {" "}
-                  İyi Blog{" "}
+                  İyi Blog
                 </a>
                 <button aria-label="Add" className="text-black   ">
                   <svg
-                    className="fill-stroke"
+                    className=""
                     width={16}
                     height={16}
                     viewBox="0 0 16 16"
@@ -358,7 +351,7 @@ export default function Navbar() {
                 <a className="flex items-center gap-2" href="/">
                   <div>
                     <svg
-                      className="fill-stroke"
+                      className=""
                       width={18}
                       height={20}
                       viewBox="0 0 18 20"
@@ -388,7 +381,7 @@ export default function Navbar() {
                 <a className="flex items-center gap-2" href="/">
                   <div>
                     <svg
-                      className="fill-stroke"
+                      className=""
                       width={22}
                       height={22}
                       viewBox="0 0 22 22"
@@ -425,7 +418,7 @@ export default function Navbar() {
                 <a className="flex items-center gap-2 " href="/">
                   <div>
                     <svg
-                      className="fill-stroke"
+                      className=""
                       width={20}
                       height={20}
                       viewBox="0 0 20 20"
