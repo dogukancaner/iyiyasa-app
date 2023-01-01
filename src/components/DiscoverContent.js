@@ -94,8 +94,8 @@ const Content = () => {
                       <h1 className="text-3xl font-bold">
                         {item.instructorname}
                       </h1>
-                      <p className="text-xl">{item.title}</p>
-                      <button className="mt-4 rounded-md bg-neutral-800 py-1 px-2 text-lg hover:bg-neutral-900">
+                      <p className="text-2xl text-white">{item.title}</p>
+                      <button className="mt-4 rounded-md  bg-neutral-800 py-1 px-2 text-xl hover:bg-neutral-900">
                         Keşfet
                       </button>
                     </div>
