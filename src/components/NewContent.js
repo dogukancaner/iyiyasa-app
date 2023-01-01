@@ -206,7 +206,7 @@ const NewContent = () => {
   return (
     <div className="container mx-auto p-4">
       <div className="flex justify-between items-center mb-2">
-        <h1 className="text-2xl font-bold">İçeriklere Göz At</h1>
+        <h1 className="text-2xl font-bold">En Yeniler</h1>
         <span>Hepsini Gör</span>
       </div>
       <div>
@@ -228,7 +228,7 @@ const NewContent = () => {
             },
           }}
           modules={[Pagination]}
-          className="mySwiper"
+          className="mt-4"
         >
           {sliderObject.map((item, index) => (
             <SwiperSlide key={index}>
@@ -242,7 +242,7 @@ const NewContent = () => {
                   <span className="absolute left-4 top-4 text-black border-2 p-1 border-transparent rounded-lg text-sm bg-gray-100 font-bold">
                     {item.category}
                   </span>
-                  <span className="absolute top-48 left-4 text-black border-gray-100  p-1 rounded-lg text-sm bg-gray-100 font-bold">
+                  <span className="absolute top-52 left-4 text-black border-gray-100  p-1 rounded-lg text-sm bg-gray-100 font-bold">
                     15dk
                   </span>
                   <div className="pl-4 h-20 mt-2">
