@@ -3,6 +3,9 @@ import React from "react";
 import DiscoverContent1 from "../img/discover-content.jpg";
 import DiscoverContent2 from "../img/discover-content-2.jpg";
 import DiscoverContent3 from "../img/discover-content-3.jpg";
+import DiscoverContent4 from "../img/discover-content-4.jpg";
+import DiscoverContent5 from "../img/discover-content-5.jpg";
+import DiscoverContent6 from "../img/discover-content-6.jpg";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -27,23 +30,23 @@ const sliderObject = [
   },
   {
     image: DiscoverContent3,
-    title: "Yeni Başlayanlar için Fitness",
+    title: "Yedi Beslenme Türünü Keşfet",
     numberofcourses: "14 Ders",
   },
   {
-    image: DiscoverContent1,
-    title: "Yeni Başlayanlar için Fitness",
-    numberofcourses: "7 Ders",
+    image: DiscoverContent4,
+    title: "Element Yogası Serisi",
+    numberofcourses: "4 Ders",
   },
   {
-    image: DiscoverContent2,
-    title: "Yeni Başlayanlar için Fitness",
-    numberofcourses: "12 Ders",
+    image: DiscoverContent5,
+    title: "10 Günde Yağ Yak",
+    numberofcourses: "10 Ders",
   },
   {
-    image: DiscoverContent3,
-    title: "Yeni Başlayanlar için Fitness",
-    numberofcourses: "14 Ders",
+    image: DiscoverContent6,
+    title: "Duruş Bozukluğuna Yönelik Egzersizler",
+    numberofcourses: "11 Ders",
   },
 ];
 
@@ -99,66 +102,9 @@ const Content = () => {
                   </div>
                 </div>
               </div>
-              {/* <div className="flex flex-col items-start relative">
-                <img
-                  src={item.image}
-                  alt="content-slider1"
-                  className="w-full object-cover h-96 rounded-lg"
-                />
-                <div className=" absolute top-72 pl-10">
-                  <h1 className=" text-white font-bold mt-1 mb-1 text-2xl">
-                    {item.instructorname}
-                  </h1>
-                </div>
-                <div className="absolute pl-10 mb-4 text-white text-lg flex font-medium top-80 gap-96 mt-2 ">
-                  <p>{item.branch}</p>
-                  <p className="ml-24">Keşfet</p>
-                </div>
-              </div> */}
             </SwiperSlide>
           ))}
         </Swiper>
-        {/* <Swiper
-          slidesPerView={3}
-          spaceBetween={10}
-          breakpoints={{
-            640: {
-              slidesPerView: 1,
-              spaceBetween: 20,
-            },
-            768: {
-              slidesPerView: 2,
-              spaceBetween: 40,
-            },
-            1024: {
-              slidesPerView: 3,
-              spaceBetween: 50,
-            },
-          }}
-          modules={[Pagination]}
-          className="mySwiper"
-        >
-          {sliderObject.map((item, index) => (
-            <SwiperSlide key={index}>
-              <div className="flex flex-col items-start relative">
-                <img
-                  src={item.image}
-                  alt="content-slider1"
-                  className="w-full object-cover h-64 rounded-lg"
-                />
-                <div className=" absolute top-44 pl-4 mb-4 mt-2">
-                  <h1 className=" text-white font-bold mt-1 mb-1 text-lg">
-                    {item.title}
-                  </h1>
-                </div>
-                <div className="absolute pl-4 mb-4 text-white text-md flex justify-between font-medium top-52 gap-80 mt-2 ">
-                  <p>{item.numberofcourses}</p>
-                  <p>Keşfet</p>
-                </div>
-              </div>
-            </SwiperSlide>
-          ))}
-        </Swiper> */}
       </div>
     </div>
   );

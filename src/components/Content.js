@@ -1,5 +1,12 @@
 import React from "react";
-import ContentSlider1 from "../img/content-slider1.jpg";
+import Content1 from "../img/content-1.jpg";
+import Content2 from "../img/content-2.jpg";
+import Content3 from "../img/content-3.jpg";
+import Content4 from "../img/content-4.jpg";
+import Content5 from "../img/content-5.jpg";
+import Content6 from "../img/content-6.jpg";
+import Content7 from "../img/content-7.jpg";
+import Content8 from "../img/content-8.jpg";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -16,52 +23,52 @@ import { FaChevronLeft } from "react-icons/fa";
 
 const sliderObject = [
   {
-    image: ContentSlider1,
-    title: "Atık Sabunlardan Temizleyici Yapımı",
-    instructor: "İrem Ortaç",
+    image: Content1,
+    title: "Sumo Squat Nasıl Yapılır?",
+    instructor: "Halil Kılıç",
     category: "Fitness",
   },
   {
-    image: ContentSlider1,
-    title: "Pilatesle Yağ Yakımını Başlat",
+    image: Content2,
+    title: "Kalça Bacak Sıkılaştırma Egzersizi Nasıl Yapılır?",
     instructor: "Burcu Tunçok",
-    category: "Mutfak",
+    category: "Fitness",
   },
   {
-    image: ContentSlider1,
-    title: "Karın Odaklı Antrenman",
-    instructor: "Özkan Türkoğlu",
+    image: Content3,
+    title: "Curtsy Lunge Nasıl Yapılır?",
+    instructor: "Verda Kutsal",
+    category: "Fitness",
+  },
+  {
+    image: Content4,
+    title: "Mağarada Güçlen 2 (AMRAP)",
+    instructor: "Tuğrul Çağrı Yılmazer",
+    category: "Fitness",
+  },
+  {
+    image: Content5,
+    title: "Mağarada Güçlen 2 (AMRAP)",
+    instructor: "Tuğrul Çağrı Yılmazer",
+    category: "Fitness",
+  },
+  {
+    image: Content6,
+    title: "Gua Sha ile Tüm Yüz",
+    instructor: "Nihan Büyükaksu",
     category: "Yoga",
   },
   {
-    image: ContentSlider1,
-    title: "Yulaflı Kakaolu Muhallebi",
-    instructor: "Eti Lifalif",
-    category: "Fitness",
+    image: Content7,
+    title: "Pesketaryan Beslenme Nedir?",
+    instructor: "Diyetkolik",
+    category: "Mutfak",
   },
   {
-    image: ContentSlider1,
-    title: "Yulaflı Kakaolu Muhallebi",
-    instructor: "Eti Lifalif",
-    category: "Atölye",
-  },
-  {
-    image: ContentSlider1,
-    title: "Yulaflı Kakaolu Muhallebi",
-    instructor: "Eti Lifalif",
-    category: "Farkındalık",
-  },
-  {
-    image: ContentSlider1,
-    title: "Yulaflı Kakaolu Muhallebi",
-    instructor: "Eti Lifalif",
-    category: "Fitness",
-  },
-  {
-    image: ContentSlider1,
-    title: "Yulaflı Kakaolu Muhallebi",
-    instructor: "Eti Lifalif",
-    category: "Uyku",
+    image: Content8,
+    title: "İdeal Kilo Nasıl Korunur?",
+    instructor: "Diyetkolik",
+    category: "mutfak",
   },
 ];
 
@@ -100,12 +107,12 @@ const Content = () => {
                   <img
                     src={item.image}
                     alt="content-slider1"
-                    className="w-full h-64 rounded-lg object-cover"
+                    className="w-full h-42 rounded-lg object-cover"
                   />
-                  <span className="absolute left-4 top-4 text-black border-2 p-1 border-transparent rounded-lg text-sm bg-gray-100 font-bold">
+                  <span className="absolute left-4 top-2 text-black border-2 p-1 border-transparent rounded-lg text-sm bg-gray-100 font-bold">
                     {item.category}
                   </span>
-                  <span className="absolute top-52 left-4 text-black border-gray-100  p-1 rounded-lg text-sm bg-gray-100 font-bold">
+                  <span className="absolute top-36 left-4 text-black border-gray-100  p-1 rounded-lg text-sm bg-gray-100 font-bold">
                     15dk
                   </span>
                   <div className="pl-4 h-20 mt-2">
