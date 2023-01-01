@@ -102,8 +102,8 @@ const Content = () => {
         >
           {sliderObject.map((item, index) => (
             <SwiperSlide key={index}>
-              <div className="border-2  border-gray-200 rounded-lg ">
-                <div className="flex flex-col items-start relative">
+              <div className="border-2  border-gray-200 rounded-lg hover:scale-95 duration-300">
+                <div className="flex flex-col items-start relative ">
                   <img
                     src={item.image}
                     alt="content-slider1"

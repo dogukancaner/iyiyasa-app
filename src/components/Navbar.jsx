@@ -18,22 +18,34 @@ export default function Navbar() {
             <div className="hidden md:block">
               <ul className="flex items-center gap-8">
                 <li>
-                  <a href="/" className="text-gray-600 font-medium text-lg">
+                  <a
+                    href="/"
+                    className="text-gray-600 hover:text-gray-400 duration-300 font-medium text-lg"
+                  >
                     Eğitmenler
                   </a>
                 </li>
                 <li>
-                  <a href="/" className="text-gray-600 font-medium text-lg">
+                  <a
+                    href="/"
+                    className="text-gray-600 hover:text-gray-400 duration-300  font-medium text-lg"
+                  >
                     Özel Seriler
                   </a>
                 </li>
                 <li>
-                  <a href="/" className="text-gray-600 font-medium text-lg">
+                  <a
+                    href="/"
+                    className="text-gray-600 hover:text-gray-400 duration-300  font-medium text-lg"
+                  >
                     Bana Özel
                   </a>
                 </li>
                 <li>
-                  <a href="/" className="text-gray-600 font-medium  text-lg">
+                  <a
+                    href="/"
+                    className="text-gray-600 hover:text-gray-400 duration-300  font-medium  text-lg"
+                  >
                     İyi Blog
                   </a>
                 </li>
@@ -42,7 +54,7 @@ export default function Navbar() {
             <div className="hidden md:flex items-center gap-6">
               <a aria-label="Hesabım" href="/">
                 <svg
-                  className=" text-gray-600"
+                  className=" text-gray-600  "
                   width={24}
                   height={24}
                   viewBox="0 0 18 20"
@@ -192,7 +204,7 @@ export default function Navbar() {
           id="mobile-menu"
           className={`${
             showMenu ? "flex" : "hidden"
-          }  md:hidden absolute inset-0 z-10 flex-col w-full h-screen bg-white pt-6`}
+          } md:hidden absolute inset-0 z-10 flex-col w-full h-screen bg-white pt-6`}
         >
           <div className="w-full">
             <div className="flex items-center justify-between border-b border-gray-600 pb-3 mx-4">
@@ -232,7 +244,10 @@ export default function Navbar() {
           <div className="mt-4 mx-4">
             <ul className="flex flex-col gap-4">
               <li className="border-b border-black pb-4 px-1 flex items-center justify-between">
-                <a href="/" className="font-medium text-lg text-gray-600 ">
+                <a
+                  href="/"
+                  className="font-medium text-lg text-gray-800 hover:text-gray-400 duration-300  "
+                >
                   Eğitmenler
                 </a>
                 <button aria-label="Add" className="text-black  ">
@@ -260,7 +275,10 @@ export default function Navbar() {
                 </button>
               </li>
               <li className="border-b border-black pb-4 px-1 flex items-center justify-between">
-                <a href="/" className="font-medium text-lg text-gray-600 ">
+                <a
+                  href="/"
+                  className="font-medium text-lg text-gray-800 hover:text-gray-400 duration-300  "
+                >
                   Özel Seriler
                 </a>
                 <button aria-label="Add" className="text-black   ">
@@ -288,7 +306,10 @@ export default function Navbar() {
                 </button>
               </li>
               <li className="border-b border-black pb-4 px-1 flex items-center justify-between">
-                <a href="/" className="font-medium text-lg text-gray-600">
+                <a
+                  href="/"
+                  className="font-medium text-lg text-gray-800 hover:text-gray-400 duration-300 "
+                >
                   Bana Özel
                 </a>
                 <button aria-label="Add" className="text-black">
@@ -316,7 +337,10 @@ export default function Navbar() {
                 </button>
               </li>
               <li className="border-b border-black pb-4 px-1 flex items-center justify-between">
-                <a href="/" className="font-medium text-lg text-gray-600">
+                <a
+                  href="/"
+                  className="font-medium text-lg text-gray-800 hover:text-gray-400 duration-300"
+                >
                   İyi Blog
                 </a>
                 <button aria-label="Add" className="text-black   ">
@@ -348,7 +372,7 @@ export default function Navbar() {
           <div className="w-full h-full flex items-start">
             <ul className=" bg-gray-200 p-12 mt-4 flex flex-row justify-center gap-5 w-full">
               <li>
-                <a className="flex items-center gap-2" href="/">
+                <a className="flex items-center gap-2 " href="/">
                   <div>
                     <svg
                       className=""
@@ -374,7 +398,7 @@ export default function Navbar() {
                       />
                     </svg>
                   </div>
-                  <p className="font-medium text-gray-600">Hesabım</p>
+                  <p className="font-medium text-gray-800 ">Hesabım</p>
                 </a>
               </li>
               <li>
@@ -411,7 +435,7 @@ export default function Navbar() {
                       />
                     </svg>
                   </div>
-                  <p className="font-medium text-gray-600">Sepetim</p>
+                  <p className="font-medium text-gray-800">Sepetim</p>
                 </a>
               </li>
               <li>
@@ -434,7 +458,7 @@ export default function Navbar() {
                       />
                     </svg>
                   </div>
-                  <p className="font-medium text-gray-600">Favorilerim</p>
+                  <p className="font-medium text-gray-800">Favorilerim</p>
                 </a>
               </li>
             </ul>

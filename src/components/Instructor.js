@@ -75,7 +75,7 @@ const Content = () => {
                         {item.instructorname}
                       </h1>
                       <p className="text-xl">{item.branch}</p>
-                      <button className="mt-4 rounded-md bg-neutral-800 py-1 px-2 text-lg hover:bg-neutral-900">
+                      <button className="mt-4 rounded-md bg-neutral-600 py-1 px-2 text-lg hover:bg-neutral-800">
                         Keşfet
                       </button>
                     </div>

@@ -11,38 +11,38 @@ const Category = () => {
     <div className="container mx-auto p-4">
       <div className="grid grid-cols-3 gap-4 lg:grid-cols-6 md:grid-cols-3 sm:grid-cols-3">
         <span className="flex flex-col items-center justify-center border cursor-pointer border-gray-100 rounded-2xl p-6 bg-orange-100  hover:bg-white transition ease-in duration-700 ">
-          <img src={Category1} alt="" />
+          <img src={Category1} alt="" className="hover:animate-bounce" />
           <p className=" text-orange-400 font-medium text-xl hidden md:block">
             Fitness
           </p>
         </span>
         <span className="flex flex-col items-center justify-center border cursor-pointer border-gray-100 rounded-2xl p-6 bg-indigo-100 hover:bg-white  transition ease-in duration-700 ">
-          <img src={Category2} alt="" />
+          <img src={Category2} alt="" className="hover:animate-bounce" />
           <p className="text-indigo-500 font-medium text-xl hidden md:block ">
             Yoga
           </p>
         </span>
         <span className="flex flex-col items-center justify-center border cursor-pointer border-gray-100 rounded-2xl p-6 bg-green-100 hover:bg-white  transition ease-in duration-700">
-          <img src={Category3} alt="" />
+          <img src={Category3} alt="" className="hover:animate-bounce" />
           <p className="text-center text-green-500 font-medium text-xl hidden md:block">
             {" "}
             Farkındalık
           </p>
         </span>
         <span className="flex flex-col items-center justify-center border cursor-pointer border-gray-100 rounded-2xl p-6 bg-blue-100 hover:bg-white  transition ease-in duration-700">
-          <img src={Category4} alt="" />
+          <img src={Category4} alt="" className="hover:animate-bounce" />
           <p className="text-center text-blue-500 font-medium text-xl hidden md:block">
             Uyku
           </p>
         </span>
         <span className="flex flex-col items-center justify-center border cursor-pointer border-gray-100 rounded-2xl p-6 bg-yellow-100 hover:bg-white  transition ease-in duration-700">
-          <img src={Category5} alt="" />
+          <img src={Category5} alt="" className="hover:animate-bounce" />
           <p className="text-center text-yellow-500 font-medium text-xl hidden md:block">
             Mutfak
           </p>
         </span>
         <span className="flex flex-col items-center justify-center border cursor-pointer border-gray-100 rounded-2xl p-6 bg-red-100 hover:bg-white  transition ease-in duration-700">
-          <img src={Category6} alt="" />
+          <img src={Category6} alt="" className="hover:animate-bounce" />
           <p className="text-center text-red-700 font-medium text-xl hidden md:block">
             Atölye
           </p>
