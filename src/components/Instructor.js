@@ -10,7 +10,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 // import required modules
-import { Pagination } from "swiper";
+import { Pagination, Autoplay } from "swiper";
 
 const sliderObject = [
   {
@@ -41,6 +41,10 @@ const Content = () => {
         <Swiper
           slidesPerView={1}
           spaceBetween={10}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
           breakpoints={{
             640: {
               slidesPerView: 1,
@@ -55,7 +59,7 @@ const Content = () => {
               spaceBetween: 40,
             },
           }}
-          modules={[Pagination]}
+          modules={[Pagination, Autoplay]}
           className="mt-4"
         >
           {sliderObject.map((item, index) => (
