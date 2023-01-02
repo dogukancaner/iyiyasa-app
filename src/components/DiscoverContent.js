@@ -80,7 +80,7 @@ const Content = () => {
         >
           {sliderObject.map((item, index) => (
             <SwiperSlide key={index}>
-              <div className="group w-full h-96 [perspective:1000px]">
+              <div className="group cursor-pointer w-full h-96 [perspective:1000px]">
                 <div className="relative h-full rounded-xl shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
                   <div className="absolute inset-0">
                     <img

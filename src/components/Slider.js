@@ -35,34 +35,32 @@ const sliderObject = [
 const Slider = () => {
   return (
     <div className="container mx-auto p-4 text-center">
-      <div>
-        <Swiper
-          spaceBetween={30}
-          centeredSlides={true}
-          autoplay={{
-            delay: 2500,
-            disableOnInteraction: false,
-          }}
-          pagination={{
-            clickable: true,
-          }}
-          navigation={false}
-          modules={[Autoplay, Pagination, Navigation]}
-          className="mySwiper"
-        >
-          {sliderObject.map((item, index) => {
-            return (
-              <SwiperSlide key={index}>
-                <img
-                  src={item.image}
-                  alt="slider"
-                  className="w-full object-cover"
-                />
-              </SwiperSlide>
-            );
-          })}
-        </Swiper>
-      </div>
+      <Swiper
+        spaceBetween={30}
+        centeredSlides={true}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
+        pagination={{
+          clickable: true,
+        }}
+        navigation={false}
+        modules={[Autoplay, Pagination, Navigation]}
+        className="mySwiper"
+      >
+        {sliderObject.map((item, index) => {
+          return (
+            <SwiperSlide key={index}>
+              <img
+                src={item.image}
+                alt="slider"
+                className="w-full cursor-pointer object-cover"
+              />
+            </SwiperSlide>
+          );
+        })}
+      </Swiper>
     </div>
   );
 };
