@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import Content1 from "../img/content-1.jpg";
 import Content2 from "../img/content-2.jpg";
 import Content3 from "../img/content-3.jpg";
@@ -83,6 +83,7 @@ const sliderObject = [
 ];
 
 const Content = () => {
+  const swiperRef = useRef();
   return (
     <div className="container mx-auto p-4">
       <div className="flex justify-between items-center mb-2">
@@ -93,6 +94,9 @@ const Content = () => {
         <Swiper
           slidesPerView={1}
           spaceBetween={10}
+          onBeforeInit={(swiper) => {
+            swiperRef.current = swiper;
+          }}
           breakpoints={{
             640: {
               slidesPerView: 2,
@@ -140,10 +144,16 @@ const Content = () => {
           ))}
         </Swiper>
         <div className="flex justify-end items-center mt-2 ">
-          <span className="border-2 rounded-full p-2 mr-2">
+          <span
+            className="border-2 rounded-full p-2 mr-2 cursor-pointer"
+            onClick={() => swiperRef.current?.slidePrev()}
+          >
             <FaChevronLeft />
           </span>
-          <span className="border-2 rounded-full p-2">
+          <span
+            className="border-2 rounded-full p-2 cursor-pointer"
+            onClick={() => swiperRef.current?.slideNext()}
+          >
             <FaChevronRight />
           </span>
         </div>
