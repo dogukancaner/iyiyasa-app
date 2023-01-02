@@ -20,7 +20,7 @@ export default function Navbar() {
                 <li>
                   <a
                     href="/"
-                    className="text-gray-600 hover:text-gray-400 duration-300 font-medium text-lg"
+                    className="text-gray-600 hover:text-gray-400  duration-300 font-medium text-lg"
                   >
                     Eğitmenler
                   </a>

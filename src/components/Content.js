@@ -88,7 +88,9 @@ const Content = () => {
     <div className="container mx-auto p-4">
       <div className="flex justify-between items-center mb-2">
         <h1 className="text-2xl font-bold">İçeriklere Göz At</h1>
-        <span className="text-gray-600 font-medium text-md">Hepsini Gör</span>
+        <span className="text-gray-600 font-medium text-md cursor-pointer">
+          Hepsini Gör
+        </span>
       </div>
       <div>
         <Swiper
@@ -129,7 +131,7 @@ const Content = () => {
                   <span className="absolute right-4 top-2 text-black  p-1 rounded-full text-sm bg-gray-50 font-bold">
                     <HiOutlineHeart size={22} />
                   </span>
-                  <span className="absolute top-36 left-4 text-black  p-1 rounded-lg text-sm bg-gray-50 font-bold">
+                  <span className="absolute top-36  left-4 text-black  p-1 rounded-lg text-sm bg-gray-50 font-bold">
                     {item.time}
                   </span>
                   <div className="pl-4 h-20 mt-2">

@@ -55,7 +55,9 @@ const Content = () => {
     <div className="container mx-auto p-4">
       <div className="flex justify-between items-center">
         <h1 className="text-2xl font-bold">İyi Yaşamı Keşfet</h1>
-        <span className="text-gray-600 font-medium text-md">Hepsini Gör</span>
+        <span className="text-gray-600 font-medium text-md cursor-pointer">
+          Hepsini Gör
+        </span>
       </div>
       <div>
         <Swiper
