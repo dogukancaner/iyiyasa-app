@@ -141,11 +141,11 @@ const NewContent = () => {
           ))}
         </Swiper>
         <div className="flex justify-end items-center mt-2 ">
-          <span className="border-2 rounded-full p-2 mr-2 cursor-pointer">
+          <span className="border-2 border-gray-600 rounded-full  p-2 mr-2 cursor-pointer">
             <FaChevronLeft onClick={() => swiperRef.current?.slidePrev()} />
           </span>
           <span
-            className="border-2 rounded-full p-2 cursor-pointer"
+            className="border-2 border-gray-600 rounded-full p-2 cursor-pointer"
             onClick={() => swiperRef.current?.slideNext()}
           >
             <FaChevronRight />
