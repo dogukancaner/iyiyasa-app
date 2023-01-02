@@ -21,54 +21,64 @@ import { Pagination } from "swiper";
 import { FaChevronRight } from "react-icons/fa";
 import { FaChevronLeft } from "react-icons/fa";
 
+import { HiOutlineHeart } from "react-icons/hi";
+
 const sliderObject = [
   {
     image: Content1,
     title: "Sumo Squat Nasıl Yapılır?",
     instructor: "Halil Kılıç",
     category: "Fitness",
+    time: "15dk",
   },
   {
     image: Content2,
     title: "Kalça Bacak Sıkılaştırma Egzersizi Nasıl Yapılır?",
     instructor: "Burcu Tunçok",
     category: "Fitness",
+    time: "12dk",
   },
   {
     image: Content3,
     title: "Curtsy Lunge Nasıl Yapılır?",
     instructor: "Verda Kutsal",
     category: "Fitness",
+    time: "10dk",
   },
   {
     image: Content4,
     title: "Mağarada Güçlen 2 (AMRAP)",
     instructor: "Tuğrul Çağrı Yılmazer",
     category: "Fitness",
+    time: "16dk",
   },
   {
     image: Content5,
     title: "Mağarada Güçlen 2 (AMRAP)",
     instructor: "Tuğrul Çağrı Yılmazer",
     category: "Fitness",
+    time: "16dk",
   },
   {
     image: Content6,
     title: "Gua Sha ile Tüm Yüz",
     instructor: "Nihan Büyükaksu",
     category: "Yoga",
+    time: "15dk",
   },
   {
     image: Content7,
     title: "Pesketaryan Beslenme Nedir?",
     instructor: "Diyetkolik",
     category: "Mutfak",
+    time: "2dk",
   },
   {
     image: Content8,
     title: "İdeal Kilo Nasıl Korunur?",
     instructor: "Diyetkolik",
-    category: "mutfak",
+    category: "Mutfak",
+    time: "2dk",
   },
 ];
 
@@ -112,8 +122,11 @@ const Content = () => {
                   <span className="absolute left-4 top-2 text-black  p-1 rounded-lg text-sm bg-gray-50 font-bold">
                     {item.category}
                   </span>
+                  <span className="absolute right-4 top-2 text-black  p-1 rounded-full text-sm bg-gray-50 font-bold">
+                    <HiOutlineHeart size={22} />
+                  </span>
                   <span className="absolute top-36 left-4 text-black  p-1 rounded-lg text-sm bg-gray-50 font-bold">
-                    15dk
+                    {item.time}
                   </span>
                   <div className="pl-4 h-20 mt-2">
                     <h1 className="text-x font-bold lg:mb-2">{item.title}</h1>

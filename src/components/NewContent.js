@@ -18,6 +18,7 @@ import { Pagination } from "swiper";
 
 import { FaChevronRight } from "react-icons/fa";
 import { FaChevronLeft } from "react-icons/fa";
+import { HiOutlineHeart } from "react-icons/hi";
 
 const sliderObject = [
   {
@@ -25,48 +26,56 @@ const sliderObject = [
     title: "Tatlı Bağımlılığından Nasıl Kurtulabilirim?",
     instructor: "Diyetkolik",
     category: "Mutfak",
+    time: "1dk",
   },
   {
     image: NewContent2,
     title: "Kilo Verirken Ne Kadar Egzersiz Yapmalıyım?",
     instructor: "Diyetkolik",
     category: "Mutfak",
+    time: "1dk",
   },
   {
     image: NewContent3,
     title: "Karbonhidrat Yemeyi Azaltarak Kilo Verebilir Miyim?",
     instructor: "Diyetkolik",
     category: "Mutfak",
+    time: "1dk",
   },
   {
     image: NewContent4,
     title: "Protein Tozu Kullanmak Zararlı Mı?",
     instructor: "Diyetkolik",
     category: "Mutfak",
+    time: "1dk",
   },
   {
     image: NewContent5,
     title: "Reformer Pilates Etkili İç-Dış Bacak Egzersizi",
     instructor: "Gözde Yavuzyılmaz",
     category: "Fitness",
+    time: "16dk",
   },
   {
     image: NewContent6,
     title: "Reformer Pilates Etkili Karın Egzersizi",
     instructor: "Gözde Yavuzyılmaz",
     category: "Fitness",
+    time: "11dk",
   },
   {
     image: NewContent7,
     title: "Reformer Pilates Etkili Üst Beden Antremanı",
     instructor: "Gözde Yavuzyılmaz",
     category: "Fitness",
+    time: "25dk",
   },
   {
     image: NewContent8,
     title: "Reformer Pilates Etkili Kalça Egzersizi",
     instructor: "Gözde Yavuzyılmaz",
     category: "Fitness",
+    time: "14dk",
   },
 ];
 
@@ -110,8 +119,11 @@ const NewContent = () => {
                   <span className="absolute left-4 top-2 text-black border-2 p-1 border-transparent rounded-lg text-sm bg-gray-100 font-bold">
                     {item.category}
                   </span>
+                  <span className="absolute right-4 top-2 text-black  p-1 rounded-full text-sm bg-gray-50 font-bold">
+                    <HiOutlineHeart size={22} />
+                  </span>
                   <span className="absolute top-36 left-4 text-black border-gray-100  p-1 rounded-lg text-sm bg-gray-100 font-bold">
-                    15dk
+                    {item.time}
                   </span>
                   <div className="pl-4 h-20 mt-2">
                     <h1 className="text-x font-bold lg:mb-2">{item.title}</h1>
