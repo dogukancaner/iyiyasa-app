@@ -132,7 +132,7 @@ const NewContent = () => {
                     {item.time}
                   </span>
                   <div className="pl-4 h-20 mt-2">
-                    <h1 className="text-x font-bold lg:mb-2">{item.title}</h1>
+                    <h1 className="text-sm font-bold mb-2">{item.title}</h1>
                     <span className="text-sm text-gray-500  font-medium">
                       {item.instructor}
                     </span>
