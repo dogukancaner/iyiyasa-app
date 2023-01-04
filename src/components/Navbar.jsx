@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import Logo1 from "../img/logo1.png";
 import Logo2 from "../img/logo2.png";
 
+import { Link } from "react-router-dom";
+
 export default function Navbar() {
   const [showMenu, setShowMenu] = useState(false);
 
@@ -10,44 +12,44 @@ export default function Navbar() {
       <div className="container mx-auto relative">
         <div className="py-4 mx-4 md:mx-6">
           <div className="flex items-center justify-between border-b border-gray-200 dark:border-gray-700 py-4">
-            <div className="flex gap-4 ">
+            <Link to="/" className="flex gap-4">
               <img src={Logo1} alt="" />
               <img src={Logo2} alt="" />
-            </div>
+            </Link>
             <div className="md:hidden cursor-pointer"></div>
             <div className="hidden md:block">
               <ul className="flex items-center gap-8">
                 <li>
-                  <a
-                    href="/"
+                  <Link
+                    to="/instructor"
                     className="text-gray-600 hover:text-gray-400  duration-300 font-medium text-lg"
                   >
                     Eğitmenler
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="/"
+                  <Link
+                    to="/specialseries"
                     className="text-gray-600 hover:text-gray-400 duration-300  font-medium text-lg"
                   >
                     Özel Seriler
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="/"
+                  <Link
+                    to="/specialme"
                     className="text-gray-600 hover:text-gray-400 duration-300  font-medium text-lg"
                   >
                     Bana Özel
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="/"
+                  <Link
+                    to="/blog"
                     className="text-gray-600 hover:text-gray-400 duration-300  font-medium  text-lg"
                   >
                     İyi Blog
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
