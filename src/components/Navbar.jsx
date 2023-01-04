@@ -210,10 +210,10 @@ export default function Navbar() {
         >
           <div className="w-full">
             <div className="flex items-center justify-between border-b border-gray-600 pb-3 mx-4">
-              <div className="flex gap-4 ">
+              <Link to="/" className="flex gap-4 ">
                 <img className="" src={Logo1} alt="" />
                 <img src={Logo2} alt="" />
-              </div>
+              </Link>
               <button
                 aria-label="close menu"
                 onClick={() => setShowMenu(false)}
@@ -246,12 +246,12 @@ export default function Navbar() {
           <div className="mt-4 mx-4">
             <ul className="flex flex-col gap-4">
               <li className="border-b border-black pb-4 px-1 flex items-center justify-between">
-                <a
-                  href="/"
+                <Link
+                  to="/instructor"
                   className="font-medium text-lg text-gray-800 hover:text-gray-400 duration-300  "
                 >
                   Eğitmenler
-                </a>
+                </Link>
                 <button aria-label="Add" className="text-black  ">
                   <svg
                     className="fill-stroke"
@@ -277,12 +277,12 @@ export default function Navbar() {
                 </button>
               </li>
               <li className="border-b border-black pb-4 px-1 flex items-center justify-between">
-                <a
-                  href="/"
+                <Link
+                  to="/specialseries"
                   className="font-medium text-lg text-gray-800 hover:text-gray-400 duration-300  "
                 >
                   Özel Seriler
-                </a>
+                </Link>
                 <button aria-label="Add" className="text-black   ">
                   <svg
                     className=""
@@ -308,12 +308,12 @@ export default function Navbar() {
                 </button>
               </li>
               <li className="border-b border-black pb-4 px-1 flex items-center justify-between">
-                <a
-                  href="/"
+                <Link
+                  to="/specialme"
                   className="font-medium text-lg text-gray-800 hover:text-gray-400 duration-300 "
                 >
                   Bana Özel
-                </a>
+                </Link>
                 <button aria-label="Add" className="text-black">
                   <svg
                     className=""
@@ -339,12 +339,12 @@ export default function Navbar() {
                 </button>
               </li>
               <li className="border-b border-black pb-4 px-1 flex items-center justify-between">
-                <a
-                  href="/"
+                <Link
+                  to="/blog"
                   className="font-medium text-lg text-gray-800 hover:text-gray-400 duration-300"
                 >
                   İyi Blog
-                </a>
+                </Link>
                 <button aria-label="Add" className="text-black   ">
                   <svg
                     className=""
