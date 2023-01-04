@@ -11,6 +11,7 @@ import "swiper/css/navigation";
 
 // import required modules
 import { Pagination, Autoplay } from "swiper";
+import { Link } from "react-router-dom";
 
 const sliderObject = [
   {
@@ -35,9 +36,12 @@ const Content = () => {
     <div className="container mx-auto p-4">
       <div className="flex justify-between items-center">
         <h1 className="text-2xl font-bold">Eğitmenlerimizle Tanış</h1>
-        <span className="text-gray-600 font-medium text-md cursor-pointer">
+        <Link
+          to="/instructor"
+          className="text-gray-600 font-medium text-md cursor-pointer"
+        >
           Hepsini Gör
-        </span>
+        </Link>
       </div>
       <div>
         <Swiper
