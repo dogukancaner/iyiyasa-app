@@ -1,8 +1,6 @@
 import React, { useState } from "react";
-import { signInWithEmailAndPassword } from "firebase/auth";
+import { createUserWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../firebase";
-
-import { Link } from "react-router-dom";
 
 const SıgnUp = () => {
   const [authData, setAuthData] = useState({
@@ -14,7 +12,7 @@ const SıgnUp = () => {
   };
   const authFunc = async () => {
     try {
-      const result = await signInWithEmailAndPassword(
+      const result = await createUserWithEmailAndPassword(
         auth,
         authData.email,
         authData.password
@@ -55,15 +53,13 @@ const SıgnUp = () => {
             placeholder="Parola Giriniz"
             onKeyDown={useEnterKeyListener}
           />
+
           <button
             onClick={authFunc}
             className="border border-solid p-2 text-lg text-center rounded-2xl mt-2 bg-blue-600 cursor-pointer text-white "
           >
             Kayıt Ol
           </button>
-          <span className="cursor-pointer text-blue-600 font-bold ">
-            <Link to="/signup">Yeni Hesap Oluştur</Link>
-          </span>
         </div>
       </div>
     </div>
