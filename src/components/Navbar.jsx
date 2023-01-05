@@ -54,7 +54,7 @@ export default function Navbar() {
               </ul>
             </div>
             <div className="hidden md:flex items-center gap-6">
-              <a aria-label="Hesabım" href="/">
+              <Link aria-label="Hesabım" to="/signup">
                 <svg
                   className=" text-gray-600  "
                   width={24}
@@ -78,7 +78,7 @@ export default function Navbar() {
                     strokeLinejoin="round"
                   />
                 </svg>
-              </a>
+              </Link>
               <a aria-label="Favoriler" href="/">
                 <svg
                   className=" text-gray-600"
