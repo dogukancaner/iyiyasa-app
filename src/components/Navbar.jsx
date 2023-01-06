@@ -441,7 +441,7 @@ export default function Navbar() {
                 </a>
               </li>
               <li>
-                <a className="flex items-center gap-2 " href="/">
+                <Link className="flex items-center gap-2 " to="/wishlist">
                   <div>
                     <svg
                       className=""
@@ -461,7 +461,7 @@ export default function Navbar() {
                     </svg>
                   </div>
                   <p className="font-medium text-gray-800">Favorilerim</p>
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
