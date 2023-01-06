@@ -79,7 +79,7 @@ export default function Navbar() {
                   />
                 </svg>
               </Link>
-              <a aria-label="Favoriler" href="/">
+              <Link aria-label="Favoriler" to="/wishlist">
                 <svg
                   className=" text-gray-600"
                   width={24}
@@ -96,7 +96,7 @@ export default function Navbar() {
                     strokeLinejoin="round"
                   />
                 </svg>
-              </a>
+              </Link>
               <a aria-label="Sepet" href="/">
                 <svg
                   className=" text-gray-600"

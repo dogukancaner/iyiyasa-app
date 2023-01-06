@@ -9,6 +9,7 @@ import Blog from "./pages/Blog";
 import SpecialMe from "./pages/SpecialMe";
 import SıgnUp from "./pages/SignUp";
 import SıgnIn from "./pages/SignIn";
+import WishList from "./pages/WishList";
 
 function App() {
   return (
@@ -16,17 +17,17 @@ function App() {
       <BrowserRouter>
         <Navbar />
         <Routes>
-          <Route path="/home" element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path="/instructor" element={<InstructorPages />} />
           <Route path="/specialseries" element={<SpecialSeriesPage />} />
           <Route path="/specialme" element={<SpecialMe />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/signup" element={<SıgnUp />} />
           <Route path="/signin" element={<SıgnIn />} />
+          <Route path="/wishlist" element={<WishList />} />
         </Routes>
         <Footer />
       </BrowserRouter>
-      d
     </div>
   );
 }

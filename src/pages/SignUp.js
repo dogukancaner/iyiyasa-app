@@ -1,13 +1,14 @@
 import React, { useState } from "react";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../firebase";
+import { Link } from "react-router-dom";
 
 const SıgnUp = () => {
   const [authData, setAuthData] = useState({
     email: "",
     password: "",
   });
-  const onChangeFunc = (e) => {
+  const inputChange = (e) => {
     setAuthData({ ...authData, [e.target.name]: e.target.value });
   };
   const authFunc = async () => {
@@ -18,7 +19,7 @@ const SıgnUp = () => {
         authData.password
       );
       if (result.user) {
-        window.location = "/home";
+        window.location = "/";
       }
     } catch (error) {
       console.log(error);
@@ -32,13 +33,13 @@ const SıgnUp = () => {
   };
 
   return (
-    <div className="container mx-auto p-4">
+    <div className="container mx-auto p-4 h-screen mt-64">
       <div className=" flex items-center justify-center">
         <div className="max-w-lg w-full flex flex-col">
           <h2 className="text-center pb-4 font-bold text-2xl">Kayıt Ol</h2>
           <input
             name="email"
-            onChange={onChangeFunc}
+            onChange={inputChange}
             value={authData.email}
             className="p-2.5 m-2 outline-none text-base border border-solid border-gray-300 rounded-md "
             type="email"
@@ -46,13 +47,16 @@ const SıgnUp = () => {
           />
           <input
             name="password"
-            onChange={onChangeFunc}
+            onChange={inputChange}
             value={authData.password}
             className="p-2.5 m-2 outline-none text-base border border-solid border-gray-300 rounded-md"
             type="password"
             placeholder="Parola Giriniz"
             onKeyDown={useEnterKeyListener}
           />
+          <span className="cursor-pointer text-blue-600 font-bold ">
+            <Link to="/signin">Hesabına Giriş Yap</Link>
+          </span>
 
           <button
             onClick={authFunc}
