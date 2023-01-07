@@ -4,9 +4,8 @@ import Logo2 from "../img/logo2.png";
 
 import { Link } from "react-router-dom";
 
-export default function Navbar() {
+const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
-
   return (
     <div className="dark:bg-white">
       <div className="container mx-auto relative">
@@ -469,4 +468,6 @@ export default function Navbar() {
       </div>
     </div>
   );
-}
+};
+
+export default Navbar;
