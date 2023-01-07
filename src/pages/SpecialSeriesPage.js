@@ -89,20 +89,11 @@ const SpecialSeriesPage = () => {
             className="border-2 cursor-pointer border-gray-200 rounded-lg hover:scale-95 duration-300"
           >
             <div className="flex flex-col items-start">
-              <picture>
-                <source srcSet={item.image} type="image/webp" />
-                <source srcSet={item.image} type="image/png" />
-                <img
-                  src={item.image}
-                  alt="content-slider1"
-                  className="rounded-lg object-cover"
-                />
-              </picture>
-              {/* <img
+              <img
                 src={item.image}
                 alt="content-slider1"
                 className="rounded-lg object-cover"
-              /> */}
+              />
             </div>
             <div className="flex flex-col items-center justify-center gap-2  p-4">
               <h1 className="text-md font-medium text-gray-700">
