@@ -1,12 +1,12 @@
 import React, { useRef } from "react";
-import Content1 from "../img/content-1.png";
-import Content2 from "../img/content-2.png";
-import Content3 from "../img/content-3.png";
-import Content4 from "../img/content-4.png";
-import Content5 from "../img/content-5.png";
-import Content6 from "../img/content-6.png";
-import Content7 from "../img/content-7.png";
-import Content8 from "../img/content-8.png";
+import Content1 from "../img/content-1.webp";
+import Content2 from "../img/content-2.webp";
+import Content3 from "../img/content-3.webp";
+import Content4 from "../img/content-4.webp";
+import Content5 from "../img/content-5.webp";
+import Content6 from "../img/content-6.webp";
+import Content7 from "../img/content-7.webp";
+import Content8 from "../img/content-8.webp";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -120,11 +120,23 @@ const Content = () => {
             <SwiperSlide key={index}>
               <div className="border-2 cursor-pointer border-gray-200 rounded-lg hover:scale-95 duration-300">
                 <div className="flex flex-col items-start relative ">
-                  <img
+                  <picture>
+                    <source
+                      srcSet={item.image}
+                      type="image/webp"
+                      className="w-full h-42 rounded-lg object-cover"
+                    />
+                    <img
+                      src={item.image}
+                      alt="content-slider1"
+                      className="w-full h-42 rounded-lg object-cover"
+                    />
+                  </picture>
+                  {/* <img
                     src={item.image}
                     alt="content-slider1"
                     className="w-full h-42 rounded-lg object-cover"
-                  />
+                  /> */}
                   <span className="absolute left-4 top-2 text-black  p-1 rounded-lg text-sm bg-gray-50 font-bold">
                     {item.category}
                   </span>
