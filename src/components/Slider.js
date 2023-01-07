@@ -8,14 +8,16 @@ import "swiper/css/navigation";
 // import required modules
 import { Autoplay, Pagination } from "swiper";
 
-import Slider1 from "../img/slider-1.png";
-import Slider2 from "../img/slider-2.jpeg";
+// import Slider1 from "../img/slider-1.png";
+import Slider2 from "../img/slider-2.webp";
 import Slider3 from "../img/slider-3.jpeg";
 import Slider4 from "../img/slider-4.jpeg";
 import Slider5 from "../img/slider-5.jpeg";
 import Slider6 from "../img/slider-6.jpeg";
 import Slider7 from "../img/slider-7.jpeg";
 import Slider8 from "../img/slider-8.jpeg";
+
+import Slider1 from "../img/slider-1.webp";
 
 const sliderObject = [
   {
