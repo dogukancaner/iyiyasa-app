@@ -9,13 +9,13 @@ import "swiper/css/navigation";
 import { Autoplay, Pagination } from "swiper";
 
 import Slider1 from "../img/slider-1.png";
-import Slider2 from "../img/slider-2.png";
-import Slider3 from "../img/slider-3.png";
-import Slider4 from "../img/slider-4.png";
-import Slider5 from "../img/slider-5.png";
-import Slider6 from "../img/slider-6.png";
-import Slider7 from "../img/slider-7.png";
-import Slider8 from "../img/slider-8.png";
+import Slider2 from "../img/slider-2.jpeg";
+import Slider3 from "../img/slider-3.jpeg";
+import Slider4 from "../img/slider-4.jpeg";
+import Slider5 from "../img/slider-5.jpeg";
+import Slider6 from "../img/slider-6.jpeg";
+import Slider7 from "../img/slider-7.jpeg";
+import Slider8 from "../img/slider-8.jpeg";
 
 const sliderObject = [
   {
