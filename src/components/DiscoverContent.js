@@ -1,11 +1,14 @@
-import React from "react";
+import React, { useRef } from "react";
 
-import DiscoverContent1 from "../img/discover-content.jpg";
-import DiscoverContent2 from "../img/discover-content-2.jpg";
-import DiscoverContent3 from "../img/discover-content-3.jpg";
-import DiscoverContent4 from "../img/discover-content-4.jpg";
-import DiscoverContent5 from "../img/discover-content-5.jpg";
-import DiscoverContent6 from "../img/discover-content-6.jpg";
+import DiscoverContent1 from "../img/discover-content-1.jpeg";
+import DiscoverContent2 from "../img/discover-content-2.jpeg";
+import DiscoverContent3 from "../img/discover-content-3.jpeg";
+import DiscoverContent4 from "../img/discover-content-4.jpeg";
+import DiscoverContent5 from "../img/discover-content-5.jpeg";
+import DiscoverContent6 from "../img/discover-content-6.jpeg";
+
+import { FaChevronRight } from "react-icons/fa";
+import { FaChevronLeft } from "react-icons/fa";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -50,7 +53,8 @@ const sliderObject = [
   },
 ];
 
-const Content = () => {
+const DiscoverContent = () => {
+  const swiperRef = useRef();
   return (
     <div className="container mx-auto p-4">
       <div className="flex justify-between items-center">
@@ -67,6 +71,9 @@ const Content = () => {
             delay: 2500,
             disableOnInteraction: false,
           }}
+          onBeforeInit={(swiper) => {
+            swiperRef.current = swiper;
+          }}
           breakpoints={{
             640: {
               slidesPerView: 1,
@@ -81,7 +88,7 @@ const Content = () => {
               spaceBetween: 40,
             },
           }}
-          modules={[Pagination, Autoplay]}
+          modules={[Autoplay, Pagination]}
           className="mt-4"
         >
           {sliderObject.map((item, index) => (
@@ -111,9 +118,20 @@ const Content = () => {
             </SwiperSlide>
           ))}
         </Swiper>
+        <div className="flex justify-end items-center mt-2 ">
+          <span className="border-2 border-gray-600 rounded-full  p-2 mr-2 cursor-pointer">
+            <FaChevronLeft onClick={() => swiperRef.current?.slidePrev()} />
+          </span>
+          <span
+            className="border-2 border-gray-600 rounded-full p-2 cursor-pointer"
+            onClick={() => swiperRef.current?.slideNext()}
+          >
+            <FaChevronRight />
+          </span>
+        </div>
       </div>
     </div>
   );
 };
 
-export default Content;
+export default DiscoverContent;

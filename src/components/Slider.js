@@ -6,13 +6,16 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 // import required modules
-import { Autoplay, Pagination, Navigation } from "swiper";
+import { Autoplay, Pagination } from "swiper";
 
-import Slider1 from "../img/slider-1.jpg";
-import Slider2 from "../img/slider-2.jpg";
-import Slider3 from "../img/slider-3.jpg";
-import Slider4 from "../img/slider-4.jpg";
-import Slider5 from "../img/slider-5.jpg";
+import Slider1 from "../img/slider-1.png";
+import Slider2 from "../img/slider-2.jpeg";
+import Slider3 from "../img/slider-3.jpeg";
+import Slider4 from "../img/slider-4.jpeg";
+import Slider5 from "../img/slider-5.jpeg";
+import Slider6 from "../img/slider-3.jpeg";
+import Slider7 from "../img/slider-4.jpeg";
+import Slider8 from "../img/slider-5.jpeg";
 
 const sliderObject = [
   {
@@ -30,6 +33,15 @@ const sliderObject = [
   {
     image: Slider5,
   },
+  {
+    image: Slider6,
+  },
+  {
+    image: Slider7,
+  },
+  {
+    image: Slider8,
+  },
 ];
 
 const Slider = () => {
@@ -46,7 +58,7 @@ const Slider = () => {
           clickable: true,
         }}
         navigation={false}
-        modules={[Autoplay, Pagination, Navigation]}
+        modules={[Autoplay, Pagination]}
         className="mySwiper"
       >
         {sliderObject.map((item, index) => {
