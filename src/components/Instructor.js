@@ -1,8 +1,8 @@
 import React from "react";
 
-import Instructor1 from "../img/instructor-1.jpg";
-import Instructor2 from "../img/instructor-2.jpg";
-import Instructor3 from "../img/instructor-3.jpg";
+import Instructor1 from "../img/instructor-1.png";
+import Instructor2 from "../img/instructor-2.png";
+import Instructor3 from "../img/instructor-3.png";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
