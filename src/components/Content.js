@@ -1,12 +1,12 @@
 import React, { useRef } from "react";
-import Content1 from "../img/content-1.jpg";
-import Content2 from "../img/content-2.jpg";
-import Content3 from "../img/content-3.jpg";
-import Content4 from "../img/content-4.jpg";
-import Content5 from "../img/content-5.jpg";
-import Content6 from "../img/content-6.jpg";
-import Content7 from "../img/content-7.jpg";
-import Content8 from "../img/content-8.jpg";
+import Content1 from "../img/content-1.jpeg";
+import Content2 from "../img/content-2.jpeg";
+import Content3 from "../img/content-3.jpeg";
+import Content4 from "../img/content-4.jpeg";
+import Content5 from "../img/content-5.jpeg";
+import Content6 from "../img/content-6.jpeg";
+import Content7 from "../img/content-7.jpeg";
+import Content8 from "../img/content-8.jpeg";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
