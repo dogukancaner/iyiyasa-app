@@ -374,7 +374,7 @@ export default function Navbar() {
           <div className="w-full h-full flex items-start">
             <ul className=" bg-gray-200 p-12 mt-4 flex flex-row justify-center gap-5 w-full">
               <li>
-                <a className="flex items-center gap-2 " href="/">
+                <Link className="flex items-center gap-2 " to="/signin">
                   <div>
                     <svg
                       className=""
@@ -401,7 +401,7 @@ export default function Navbar() {
                     </svg>
                   </div>
                   <p className="font-medium text-gray-800 ">Hesabım</p>
-                </a>
+                </Link>
               </li>
               <li>
                 <a className="flex items-center gap-2" href="/">
