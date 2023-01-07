@@ -1,11 +1,11 @@
 import React, { useRef } from "react";
 
-import DiscoverContent1 from "../img/discover-content-1.png";
-import DiscoverContent2 from "../img/discover-content-2.png";
-import DiscoverContent3 from "../img/discover-content-3.png";
-import DiscoverContent4 from "../img/discover-content-4.png";
-import DiscoverContent5 from "../img/discover-content-5.png";
-import DiscoverContent6 from "../img/discover-content-6.png";
+import DiscoverContent1 from "../img/discover-content-1.webp";
+import DiscoverContent2 from "../img/discover-content-2.webp";
+import DiscoverContent3 from "../img/discover-content-3.webp";
+import DiscoverContent4 from "../img/discover-content-4.webp";
+import DiscoverContent5 from "../img/discover-content-5.webp";
+import DiscoverContent6 from "../img/discover-content-6.webp";
 
 import { FaChevronRight } from "react-icons/fa";
 import { FaChevronLeft } from "react-icons/fa";
@@ -96,11 +96,19 @@ const DiscoverContent = () => {
               <div className="group cursor-pointer w-full h-96 [perspective:1000px]">
                 <div className="relative h-full rounded-xl shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
                   <div className="absolute inset-0">
-                    <img
+                    <picture>
+                      <source srcSet={item.image} type="image/webp" />
+                      <img
+                        className="h-full w-full rounded-lg object-cover shadow-xl shadow-black/40"
+                        src={item.image}
+                        alt=""
+                      />
+                    </picture>
+                    {/* <img
                       className="h-full w-full rounded-lg object-cover shadow-xl shadow-black/40"
                       src={item.image}
                       alt=""
-                    />
+                    /> */}
                   </div>
                   <div className="absolute inset-0 h-full w-full rounded-xl bg-black/80 px-12 text-center text-slate-200 [transform:rotateY(180deg)] [backface-visibility:hidden]">
                     <div className="flex min-h-full flex-col items-center justify-center">
