@@ -1,17 +1,13 @@
 import React from "react";
-import Series1 from "../img/series-1.webp";
-// import Series2 from "../img/series-2.png";
-import Series3 from "../img/series-3.webp";
-import Series4 from "../img/series-4.webp";
-// import Series5 from "../img/series-5.png";
-// import Series6 from "../img/series-6.png";
-import Series7 from "../img/series-7.webp";
-import Series8 from "../img/series-8.webp";
-import Series9 from "../img/series-9.webp";
-import Series10 from "../img/series-10.webp";
-// import Series11 from "../img/series-11.png";
-import Series12 from "../img/series-12.webp";
-import Series13 from "../img/series-13.webp";
+import Series1 from "../img/series-1.png";
+import Series3 from "../img/series-3.png";
+import Series4 from "../img/series-4.png";
+import Series7 from "../img/series-7.png";
+import Series8 from "../img/series-8.png";
+import Series9 from "../img/series-9.png";
+import Series10 from "../img/series-10.png";
+import Series12 from "../img/series-12.png";
+import Series13 from "../img/series-13.png";
 
 const seriesObject = [
   {

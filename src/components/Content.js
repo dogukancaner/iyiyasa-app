@@ -1,12 +1,12 @@
 import React, { useRef } from "react";
-import Content1 from "../img/content-1.webp";
-import Content2 from "../img/content-2.webp";
-import Content3 from "../img/content-3.webp";
-import Content4 from "../img/content-4.webp";
-import Content5 from "../img/content-5.webp";
-import Content6 from "../img/content-6.webp";
-import Content7 from "../img/content-7.webp";
-import Content8 from "../img/content-8.webp";
+import Content1 from "../img/content-1.png";
+import Content2 from "../img/content-2.png";
+import Content3 from "../img/content-3.png";
+import Content4 from "../img/content-4.png";
+import Content5 from "../img/content-5.png";
+import Content6 from "../img/content-6.png";
+import Content7 from "../img/content-7.png";
+import Content8 from "../img/content-8.png";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 

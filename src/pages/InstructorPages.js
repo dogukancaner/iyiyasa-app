@@ -1,19 +1,19 @@
 import React from "react";
 
-import Instructor1 from "../img/instructor-1.webp";
-import Instructor2 from "../img/instructor-2.webp";
-import Instructor3 from "../img/instructor-3.webp";
-import Instructor4 from "../img/instructor-4.webp";
-import Instructor5 from "../img/instructor-5.webp";
-import Instructor6 from "../img/instructor-6.webp";
-import Instructor7 from "../img/instructor-7.webp";
-import Instructor8 from "../img/instructor-8.webp";
-import Instructor9 from "../img/instructor-9.webp";
-import Instructor10 from "../img/instructor-10.webp";
-import Instructor11 from "../img/instructor-11.webp";
-import Instructor12 from "../img/instructor-12.webp";
-import Instructor13 from "../img/instructor-13.webp";
-import Instructor14 from "../img/instructor-14.webp";
+import Instructor1 from "../img/instructor-1.png";
+import Instructor2 from "../img/instructor-2.png";
+import Instructor3 from "../img/instructor-3.png";
+import Instructor4 from "../img/instructor-4.png";
+import Instructor5 from "../img/instructor-5.png";
+import Instructor6 from "../img/instructor-6.png";
+import Instructor7 from "../img/instructor-7.png";
+import Instructor8 from "../img/instructor-8.png";
+import Instructor9 from "../img/instructor-9.png";
+import Instructor10 from "../img/instructor-10.png";
+import Instructor11 from "../img/instructor-11.png";
+import Instructor12 from "../img/instructor-12.png";
+import Instructor13 from "../img/instructor-13.png";
+import Instructor14 from "../img/instructor-14.png";
 
 const instructorObject = [
   {
