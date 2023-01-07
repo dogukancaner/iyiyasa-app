@@ -120,23 +120,11 @@ const Content = () => {
             <SwiperSlide key={index}>
               <div className="border-2 cursor-pointer border-gray-200 rounded-lg hover:scale-95 duration-300">
                 <div className="flex flex-col items-start relative ">
-                  <picture>
-                    <source
-                      srcSet={item.image}
-                      type="image/webp"
-                      className="w-full h-42 rounded-lg object-cover"
-                    />
-                    <img
-                      src={item.image}
-                      alt="content-slider1"
-                      className="w-full h-42 rounded-lg object-cover"
-                    />
-                  </picture>
-                  {/* <img
+                  <img
                     src={item.image}
                     alt="content-slider1"
                     className="w-full h-42 rounded-lg object-cover"
-                  /> */}
+                  />
                   <span className="absolute left-4 top-2 text-black  p-1 rounded-lg text-sm bg-gray-50 font-bold">
                     {item.category}
                   </span>
