@@ -1,8 +1,8 @@
 import React from "react";
 
-import Instructor1 from "../img/instructor-1.png";
-import Instructor2 from "../img/instructor-2.png";
-import Instructor3 from "../img/instructor-3.png";
+import Instructor1 from "../img/instructor-1.webp";
+import Instructor2 from "../img/instructor-2.webp";
+import Instructor3 from "../img/instructor-3.webp";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -73,11 +73,23 @@ const Content = () => {
               <div className="group cursor-pointer w-full h-96 [perspective:1000px]">
                 <div className="relative h-full rounded-xl shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
                   <div className="absolute inset-0">
-                    <img
+                    <picture>
+                      <source
+                        srcSet={item.image}
+                        type="image/webp"
+                        className="h-full w-full rounded-lg object-cover shadow-xl shadow-black/40"
+                      />
+                      <img
+                        src={item.image}
+                        alt="instructor"
+                        className="h-full w-full rounded-lg object-cover shadow-xl shadow-black/40"
+                      />
+                    </picture>
+                    {/* <img
                       className="h-full w-full rounded-lg object-cover shadow-xl shadow-black/40"
                       src={item.image}
                       alt=""
-                    />
+                    /> */}
                   </div>
                   <div className="absolute inset-0 h-full w-full rounded-xl bg-black/80 px-12 text-center text-slate-200 [transform:rotateY(180deg)] [backface-visibility:hidden]">
                     <div className="flex min-h-full flex-col items-center justify-center">
