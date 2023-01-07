@@ -1,11 +1,11 @@
 import React, { useRef } from "react";
 
-import DiscoverContent1 from "../img/discover-content-1.jpeg";
-import DiscoverContent2 from "../img/discover-content-2.jpeg";
-import DiscoverContent3 from "../img/discover-content-3.jpeg";
-import DiscoverContent4 from "../img/discover-content-4.jpeg";
-import DiscoverContent5 from "../img/discover-content-5.jpeg";
-import DiscoverContent6 from "../img/discover-content-6.jpeg";
+import DiscoverContent1 from "../img/discover-content-1.webp";
+import DiscoverContent2 from "../img/discover-content-2.webp";
+import DiscoverContent3 from "../img/discover-content-3.webp";
+import DiscoverContent4 from "../img/discover-content-4.webp";
+import DiscoverContent5 from "../img/discover-content-5.webp";
+import DiscoverContent6 from "../img/discover-content-6.webp";
 
 import { FaChevronRight } from "react-icons/fa";
 import { FaChevronLeft } from "react-icons/fa";
