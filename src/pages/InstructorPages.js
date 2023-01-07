@@ -102,19 +102,11 @@ const Instructor = () => {
           >
             <div className="relative h-full rounded-xl shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
               <div className="absolute inset-0">
-                <picture>
-                  <source srcSet={item.image} type="image/webp" />
-                  <img
-                    className="h-full w-full rounded-lg object-cover shadow-xl shadow-black/40"
-                    src={item.image}
-                    alt=""
-                  />
-                </picture>
-                {/* <img
+                <img
                   className="h-full w-full rounded-lg object-cover shadow-xl shadow-black/40"
                   src={item.image}
                   alt=""
-                /> */}
+                />
               </div>
               <div className="absolute inset-0 h-full w-full rounded-xl bg-black/80 text-center text-slate-200 [transform:rotateY(180deg)] [backface-visibility:hidden]">
                 <div className="flex gap-3 min-h-full flex-col items-center justify-center">
