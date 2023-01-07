@@ -470,7 +470,7 @@ const Navbar = () => {
   );
 };
 
-export default React.memo(Navbar);
+export default Navbar;
 
 // import React, { useState } from "react";
 // import Logo1 from "../img/logo1.png";
