@@ -48,7 +48,6 @@ const Slider = () => {
   return (
     <div className="container mx-auto p-4 text-center">
       <Swiper
-        spaceBetween={30}
         centeredSlides={true}
         autoplay={{
           delay: 2500,
@@ -59,16 +58,18 @@ const Slider = () => {
         }}
         navigation={false}
         modules={[Autoplay, Pagination]}
-        className="mySwiper"
+        className=" w-3/4"
       >
         {sliderObject.map((item, index) => {
           return (
             <SwiperSlide key={index}>
-              <img
-                src={item.image}
-                alt="slider"
-                className="w-full cursor-pointer object-cover"
-              />
+              <div>
+                <img
+                  src={item.image}
+                  alt="slider"
+                  className=" cursor-pointer object-cover"
+                />
+              </div>
             </SwiperSlide>
           );
         })}

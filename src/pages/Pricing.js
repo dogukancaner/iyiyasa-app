@@ -2,7 +2,7 @@ import React from "react";
 
 const Pricing = () => {
   return (
-    <div className="mx-auto container p-4 py-44 h-screen">
+    <div className="mx-auto container p-4 py-42 h-screen">
       <div className="lg:flex items-center justify-between">
         <div className=" lg:w-1/2 w-full">
           <p className="text-base leading-4 text-gray-600">Planınızı Seçin.</p>
@@ -40,6 +40,9 @@ const Pricing = () => {
                 0₺
               </p>
             </div>
+            <p className="md:w-80 text-base leading-6 mt-4 text-gray-600">
+              Paket Özellikleri
+            </p>
           </div>
           <div className="bg-gray-200 cursor-pointer shadow rounded-lg mt-3 flex relative z-30 hover:scale-105 transition duration-300">
             <div className="w-2.5  h-auto bg-gray-800 rounded-tl-md rounded-bl-md" />
@@ -52,6 +55,9 @@ const Pricing = () => {
                   49.99₺
                 </p>
               </div>
+              <p className="md:w-80 text-base leading-6 mt-4 text-gray-600">
+                Paket Özellikleri
+              </p>
             </div>
           </div>
           <div className="bg-gray-200 cursor-pointer shadow rounded-lg p-8 relative z-30 mt-7 hover:scale-105 transition duration-300">
@@ -63,6 +69,9 @@ const Pricing = () => {
                 89.99₺
               </p>
             </div>
+            <p className="md:w-80 text-base leading-6 mt-4 text-gray-600">
+              Paket Özellikleri
+            </p>
           </div>
         </div>
       </div>

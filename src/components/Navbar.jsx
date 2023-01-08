@@ -294,7 +294,7 @@ const Navbar = () => {
                 </Link>
               </li>
               <li>
-                <Link className="flex items-center gap-2" href="/pricing">
+                <Link className="flex items-center gap-2" to="/pricing">
                   <div>
                     <svg
                       className=""
@@ -327,7 +327,7 @@ const Navbar = () => {
                       />
                     </svg>
                   </div>
-                  <p className="font-medium text-gray-800">Sepetim</p>
+                  <p className="font-medium text-gray-800">Alışveriş</p>
                 </Link>
               </li>
               <li></li>
