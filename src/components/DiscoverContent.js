@@ -12,12 +12,9 @@ import { FaChevronLeft } from "react-icons/fa";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-
-// import required modules
 import { Pagination, Autoplay } from "swiper";
 
 const sliderObject = [

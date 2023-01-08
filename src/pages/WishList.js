@@ -50,11 +50,6 @@ const WishList = () => {
             <div className="text-gray-600   font-medium text-md mt-4 mb-2">
               {item.title}
             </div>
-            {/* <img
-              src={item.image}
-              alt="discover-content"
-              className=" w-40 h-40 rounded-lg"
-            /> */}
             <div className="text-gray-600  font-medium text-md mt-4 mb-2">
               {item.instructor}
             </div>

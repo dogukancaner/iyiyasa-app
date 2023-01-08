@@ -10,12 +10,10 @@ import Content8 from "../img/content-8.png";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
-// import required modules
 import { Pagination } from "swiper";
 
 import { FaChevronRight } from "react-icons/fa";
