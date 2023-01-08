@@ -78,25 +78,8 @@ const Navbar = () => {
                   />
                 </svg>
               </Link>
-              <Link aria-label="Favoriler" to="/wishlist">
-                <svg
-                  className=" text-gray-600"
-                  width={24}
-                  height={24}
-                  viewBox="0 0 22 20"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M19.4578 2.59133C18.9691 2.08683 18.3889 1.68663 17.7503 1.41358C17.1117 1.14054 16.4272 1 15.7359 1C15.0446 1 14.3601 1.14054 13.7215 1.41358C13.0829 1.68663 12.5026 2.08683 12.0139 2.59133L10.9997 3.63785L9.98554 2.59133C8.99842 1.57276 7.6596 1.00053 6.26361 1.00053C4.86761 1.00053 3.52879 1.57276 2.54168 2.59133C1.55456 3.6099 1 4.99139 1 6.43187C1 7.87235 1.55456 9.25383 2.54168 10.2724L3.55588 11.3189L10.9997 19L18.4436 11.3189L19.4578 10.2724C19.9467 9.76814 20.3346 9.16942 20.5992 8.51045C20.8638 7.85148 21 7.14517 21 6.43187C21 5.71857 20.8638 5.01225 20.5992 4.35328C20.3346 3.69431 19.9467 3.09559 19.4578 2.59133V2.59133Z"
-                    stroke="currentColor"
-                    strokeWidth="1.5"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
-              </Link>
-              <Link aria-label="Sepet" to="/">
+
+              <Link aria-label="Sepet" to="/pricing">
                 <svg
                   className=" text-gray-600"
                   width={24}
@@ -244,129 +227,37 @@ const Navbar = () => {
           </div>
           <div className="mt-4 mx-4">
             <ul className="flex flex-col gap-4">
-              <li className="border-b border-black pb-4 px-1 flex items-center justify-between">
+              <li className="border-b border-black pb-4 px-1 flex items-center justify-center">
                 <Link
                   to="/instructor"
                   className="font-medium text-lg text-gray-800 hover:text-gray-400 duration-300  "
                 >
                   Eğitmenler
                 </Link>
-                <button aria-label="Add" className="text-black  ">
-                  <svg
-                    className="fill-stroke"
-                    width={16}
-                    height={16}
-                    viewBox="0 0 16 16"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M8 3.3335V12.6668"
-                      stroke="currentColor"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                    <path
-                      d="M3.33203 8H12.6654"
-                      stroke="currentColor"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                  </svg>
-                </button>
               </li>
-              <li className="border-b border-black pb-4 px-1 flex items-center justify-between">
+              <li className="border-b border-black pb-4 px-1 flex items-center justify-center">
                 <Link
                   to="/specialseries"
                   className="font-medium text-lg text-gray-800 hover:text-gray-400 duration-300  "
                 >
                   Özel Seriler
                 </Link>
-                <button aria-label="Add" className="text-black   ">
-                  <svg
-                    className=""
-                    width={16}
-                    height={16}
-                    viewBox="0 0 16 16"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M8 3.3335V12.6668"
-                      stroke="currentColor"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                    <path
-                      d="M3.33203 8H12.6654"
-                      stroke="currentColor"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                  </svg>
-                </button>
               </li>
-              <li className="border-b border-black pb-4 px-1 flex items-center justify-between">
+              <li className="border-b border-black pb-4 px-1 flex items-center justify-center">
                 <Link
                   to="/specialme"
                   className="font-medium text-lg text-gray-800 hover:text-gray-400 duration-300 "
                 >
                   Bana Özel
                 </Link>
-                <button aria-label="Add" className="text-black">
-                  <svg
-                    className=""
-                    width={16}
-                    height={16}
-                    viewBox="0 0 16 16"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M8 3.3335V12.6668"
-                      stroke="currentColor"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                    <path
-                      d="M3.33203 8H12.6654"
-                      stroke="currentColor"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                  </svg>
-                </button>
               </li>
-              <li className="border-b border-black pb-4 px-1 flex items-center justify-between">
+              <li className="border-b border-black pb-4 px-1 flex items-center justify-center">
                 <Link
                   to="/blog"
                   className="font-medium text-lg text-gray-800 hover:text-gray-400 duration-300"
                 >
                   İyi Blog
                 </Link>
-                <button aria-label="Add" className="text-black   ">
-                  <svg
-                    className=""
-                    width={16}
-                    height={16}
-                    viewBox="0 0 16 16"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M8 3.3335V12.6668"
-                      stroke="currentColor"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                    <path
-                      d="M3.33203 8H12.6654"
-                      stroke="currentColor"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                  </svg>
-                </button>
               </li>
             </ul>
           </div>
@@ -403,7 +294,7 @@ const Navbar = () => {
                 </Link>
               </li>
               <li>
-                <Link className="flex items-center gap-2" href="/">
+                <Link className="flex items-center gap-2" href="/pricing">
                   <div>
                     <svg
                       className=""
@@ -439,29 +330,7 @@ const Navbar = () => {
                   <p className="font-medium text-gray-800">Sepetim</p>
                 </Link>
               </li>
-              <li>
-                <Link className="flex items-center gap-2 " to="/wishlist">
-                  <div>
-                    <svg
-                      className=""
-                      width={20}
-                      height={20}
-                      viewBox="0 0 20 20"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M17.3651 3.84172C16.9395 3.41589 16.4342 3.0781 15.8779 2.84763C15.3217 2.61716 14.7255 2.49854 14.1235 2.49854C13.5214 2.49854 12.9252 2.61716 12.369 2.84763C11.8128 3.0781 11.3074 3.41589 10.8818 3.84172L9.99847 4.72506L9.11514 3.84172C8.25539 2.98198 7.08933 2.49898 5.87347 2.49898C4.65761 2.49898 3.49155 2.98198 2.6318 3.84172C1.77206 4.70147 1.28906 5.86753 1.28906 7.08339C1.28906 8.29925 1.77206 9.46531 2.6318 10.3251L3.51514 11.2084L9.99847 17.6917L16.4818 11.2084L17.3651 10.3251C17.791 9.89943 18.1288 9.39407 18.3592 8.83785C18.5897 8.28164 18.7083 7.68546 18.7083 7.08339C18.7083 6.48132 18.5897 5.88514 18.3592 5.32893C18.1288 4.77271 17.791 4.26735 17.3651 3.84172V3.84172Z"
-                        stroke="currentColor"
-                        strokeWidth="1.5"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                    </svg>
-                  </div>
-                  <p className="font-medium text-gray-800">Favorilerim</p>
-                </Link>
-              </li>
+              <li></li>
             </ul>
           </div>
         </div>
