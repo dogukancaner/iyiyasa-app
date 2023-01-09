@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import Instructor1 from "../img/instructor-1.png";
 import Instructor2 from "../img/instructor-2.png";
@@ -89,37 +89,85 @@ const instructorObject = [
 ];
 
 const Instructor = () => {
+  const [search, setSearch] = useState("");
+
   return (
     <div className="container mx-auto p-4">
-      <div className="mb-4">
-        <h1 className="text-2xl font-bold">Eğitmenlerimizle Tanış</h1>
+      <div className="flex justify-between">
+        <div className="mb-4">
+          <h1 className="text-2xl font-bold">Eğitmenlerimizle Tanış</h1>
+        </div>
+        <div className="mb-4 pb-4 flex gap-4 border-b  border-gray-200 dark:border-gray-700">
+          <div className="cursor-pointer">
+            <svg
+              className="text-gray-600r"
+              width={20}
+              height={20}
+              viewBox="0 0 20 20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M9 17C13.4183 17 17 13.4183 17 9C17 4.58172 13.4183 1 9 1C4.58172 1 1 4.58172 1 9C1 13.4183 4.58172 17 9 17Z"
+                stroke="currentColor"
+                strokeWidth="1.25"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+              <path
+                d="M19.0004 19.0004L14.6504 14.6504"
+                stroke="currentColor"
+                strokeWidth="1.25"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </svg>
+          </div>
+          <input
+            type="text"
+            placeholder="Ara"
+            onChange={(e) => setSearch(e.target.value)}
+            className="focus:outline-none bg-transparent text-sm text-gray-600"
+          />
+        </div>
       </div>
+
       <div className="grid gap-8 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 ">
-        {instructorObject.map((item, index) => (
-          <div
-            key={index}
-            className="group cursor-pointer w-full h-96 [perspective:1000px]"
-          >
-            <div className="relative h-full rounded-xl shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
-              <div className="absolute inset-0">
-                <img
-                  className="h-full w-full rounded-lg object-cover shadow-xl shadow-black/40"
-                  src={item.image}
-                  alt=""
-                />
-              </div>
-              <div className="absolute inset-0 h-full w-full rounded-xl bg-black/80 text-center text-slate-200 [transform:rotateY(180deg)] [backface-visibility:hidden]">
-                <div className="flex gap-3 min-h-full flex-col items-center justify-center">
-                  <h1 className="text-3xl font-bold">{item.instructorname}</h1>
-                  <p className="text-xl">{item.branch}</p>
-                  <button className=" rounded-md bg-neutral-600 py-1 px-2 text-lg hover:bg-neutral-800">
-                    Keşfet
-                  </button>
+        {instructorObject
+          .filter((item) => {
+            return search.toLowerCase() === ""
+              ? item
+              : item.instructorname.toLowerCase().includes(search.toLowerCase())
+              ? item
+              : item.branch.toLowerCase().includes(search.toLowerCase());
+          })
+          .map((item, index) => (
+            <div
+              key={index}
+              className="group cursor-pointer w-full h-96 [perspective:1000px]"
+            >
+              <div className="relative h-full rounded-xl shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+                <div className="absolute inset-0">
+                  <img
+                    className="h-full w-full rounded-lg object-cover shadow-xl shadow-black/40"
+                    src={item.image}
+                    alt=""
+                  />
+                </div>
+                <div className="absolute inset-0 h-full w-full rounded-xl bg-black/80 text-center text-slate-200 [transform:rotateY(180deg)] [backface-visibility:hidden]">
+                  <div className="flex gap-3 min-h-full flex-col items-center justify-center">
+                    <h1 className="text-3xl font-bold">
+                      {item.instructorname}
+                    </h1>
+                    <p className="text-xl">{item.branch}</p>
+                    <button className=" rounded-md bg-neutral-600 py-1 px-2 text-lg hover:bg-neutral-800">
+                      Keşfet
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        ))}
+          ))}
       </div>
     </div>
   );

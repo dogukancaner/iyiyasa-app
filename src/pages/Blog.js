@@ -1,9 +1,47 @@
-import React from "react";
-function IndexPage() {
+import React, { useState } from "react";
+const Blog = () => {
+  const [search, setSearch] = useState("");
   return (
     <>
       <div className="mx-auto container p-4">
-        <h1 className="text-2xl mb-2 font-bold">Bloglarımız</h1>
+        <div className="flex justify-between">
+          <div className="mb-4">
+            <h1 className="text-2xl font-bold">Bloglarımız</h1>
+          </div>
+          <div className="mb-4 pb-4 flex gap-4 border-b  border-gray-200 dark:border-gray-700">
+            <div className="cursor-pointer">
+              <svg
+                className="text-gray-600r"
+                width={20}
+                height={20}
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9 17C13.4183 17 17 13.4183 17 9C17 4.58172 13.4183 1 9 1C4.58172 1 1 4.58172 1 9C1 13.4183 4.58172 17 9 17Z"
+                  stroke="currentColor"
+                  strokeWidth="1.25"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+                <path
+                  d="M19.0004 19.0004L14.6504 14.6504"
+                  stroke="currentColor"
+                  strokeWidth="1.25"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+            </div>
+            <input
+              type="text"
+              placeholder="Ara"
+              onChange={(e) => setSearch(e.target.value)}
+              className="focus:outline-none bg-transparent text-sm text-gray-600"
+            />
+          </div>
+        </div>
         <div className="grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 gap-8 ">
           <div className="hover:scale-95 transition duration-300 ease-in-out cursor-pointer">
             <img
@@ -50,7 +88,6 @@ function IndexPage() {
                   />
                 </svg>
               </div>
-              {/* <div className="h-5 w-2" /> */}
             </div>
           </div>
           <div>
@@ -155,6 +192,6 @@ function IndexPage() {
       </div>
     </>
   );
-}
+};
 
-export default IndexPage;
+export default Blog;

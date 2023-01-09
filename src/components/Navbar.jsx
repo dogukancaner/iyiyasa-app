@@ -5,7 +5,8 @@ import Logo2 from "../img/logo2.png";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
-  const [showMenu, setShowMenu] = useState(false);
+  const [showMenu, setShowMenu] = useState("");
+
   return (
     <div className="dark:bg-white">
       <div className="container mx-auto relative">
@@ -151,7 +152,7 @@ const Navbar = () => {
               </button>
             </div>
           </div>
-          <div className="mt-4 pb-4 flex gap-4 border-b border-gray-200 dark:border-gray-700">
+          {/* <div className="mt-4 pb-4 flex gap-4 border-b border-gray-200 dark:border-gray-700">
             <div>
               <svg
                 className="text-gray-600"
@@ -182,7 +183,7 @@ const Navbar = () => {
               placeholder="Ara"
               className="focus:outline-none bg-transparent text-sm text-gray-600"
             />
-          </div>
+          </div> */}
         </div>
         <div
           id="mobile-menu"
