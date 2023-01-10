@@ -2,7 +2,7 @@ import React from "react";
 
 const Pricing = () => {
   return (
-    <div className="mx-auto container p-4 py-42 ">
+    <div className="mx-auto container p-4 h-screen py-40 mb-24 ">
       <div className="lg:flex items-center justify-between">
         <div className=" lg:w-1/2 w-full">
           <p className="text-base leading-4 text-gray-600">Planınızı Seçin.</p>
