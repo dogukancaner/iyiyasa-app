@@ -84,8 +84,8 @@ const NewContent = () => {
   return (
     <div className="container mx-auto p-4">
       <div className="flex justify-between items-center mb-2">
-        <h1 className="text-2xl font-bold">En Yeniler</h1>
-        <span className="text-gray-600 font-medium text-md cursor-pointer">
+        <h1 className="text-xl font-bold">En Yeniler</h1>
+        <span className="text-gray-600 font-medium text-sm cursor-pointer">
           Hepsini Gör
         </span>
       </div>

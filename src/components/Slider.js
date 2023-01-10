@@ -58,7 +58,7 @@ const Slider = () => {
         }}
         navigation={false}
         modules={[Autoplay, Pagination]}
-        className=" w-3/4"
+        className=" md:w-full lg:w-3/4"
       >
         {sliderObject.map((item, index) => {
           return (

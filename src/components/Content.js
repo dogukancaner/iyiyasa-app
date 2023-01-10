@@ -85,8 +85,8 @@ const Content = () => {
   return (
     <div className="container mx-auto p-4">
       <div className="flex justify-between items-center mb-2">
-        <h1 className="text-2xl font-bold">İçeriklere Göz At</h1>
-        <span className="text-gray-600 font-medium text-md cursor-pointer">
+        <h1 className="text-xl font-bold">İçeriklere Göz At</h1>
+        <span className="text-gray-600 font-medium text-sm cursor-pointer">
           Hepsini Gör
         </span>
       </div>

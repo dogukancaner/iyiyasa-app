@@ -35,10 +35,10 @@ const Content = () => {
   return (
     <div className="container mx-auto p-4">
       <div className="flex justify-between items-center">
-        <h1 className="text-2xl font-bold">Eğitmenlerimizle Tanış</h1>
+        <h1 className="text-xl font-bold">Eğitmenlerimizle Tanış</h1>
         <Link
           to="/instructor"
-          className="text-gray-600 font-medium text-md cursor-pointer"
+          className="text-gray-600 font-medium text-sm cursor-pointer"
         >
           Hepsini Gör
         </Link>
