@@ -38,9 +38,9 @@ const SpecialMe = () => {
   const [search, setSearch] = useState("");
 
   return (
-    <div className="container mx-auto p-4 h-screen ">
+    <div className="container mx-auto p-4 ">
       <div className="md:flex justify-between">
-        <div className="mb-4">
+        <div className="mb-6">
           <h1 className="text-2xl font-bold">Bana Özel</h1>
         </div>
         <div className="mb-4 pb-4 flex gap-4 border-b  border-gray-200 dark:border-gray-700">
