@@ -192,7 +192,11 @@ const Navbar = () => {
       >
         <div className="w-full">
           <div className="flex items-center justify-between border-b border-gray-600 pb-3 mx-4">
-            <Link to="/" className="flex gap-4 ">
+            <Link
+              to="/"
+              onClick={() => setShowMenu(false)}
+              className="flex gap-4 "
+            >
               <img className="" src={Logo1} alt="" />
               <img src={Logo2} alt="" />
             </Link>
@@ -230,6 +234,7 @@ const Navbar = () => {
             <li className="border-b border-black pb-4 px-1 flex items-center justify-center">
               <Link
                 to="/instructor"
+                onClick={() => setShowMenu(false)}
                 className="font-medium text-lg text-gray-800 hover:text-gray-400 duration-300  "
               >
                 Eğitmenler
@@ -238,6 +243,7 @@ const Navbar = () => {
             <li className="border-b border-black pb-4 px-1 flex items-center justify-center">
               <Link
                 to="/specialseries"
+                onClick={() => setShowMenu(false)}
                 className="font-medium text-lg text-gray-800 hover:text-gray-400 duration-300  "
               >
                 Özel Seriler
@@ -246,6 +252,7 @@ const Navbar = () => {
             <li className="border-b border-black pb-4 px-1 flex items-center justify-center">
               <Link
                 to="/specialme"
+                onClick={() => setShowMenu(false)}
                 className="font-medium text-lg text-gray-800 hover:text-gray-400 duration-300 "
               >
                 Bana Özel
@@ -254,6 +261,7 @@ const Navbar = () => {
             <li className="border-b border-black pb-4 px-1 flex items-center justify-center">
               <Link
                 to="/blog"
+                onClick={() => setShowMenu(false)}
                 className="font-medium text-lg text-gray-800 hover:text-gray-400 duration-300"
               >
                 İyi Blog
@@ -264,7 +272,11 @@ const Navbar = () => {
         <div className="w-full h-full flex items-start">
           <ul className=" bg-gray-200 p-12 mt-4 flex flex-row justify-center gap-5 w-full">
             <li>
-              <Link className="flex items-center gap-2 " to="/signin">
+              <Link
+                className="flex items-center gap-2 "
+                to="/signin"
+                onClick={() => setShowMenu(false)}
+              >
                 <div>
                   <svg
                     className=""
@@ -294,7 +306,11 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
-              <Link className="flex items-center gap-2" to="/pricing">
+              <Link
+                className="flex items-center gap-2"
+                to="/pricing"
+                onClick={() => setShowMenu(false)}
+              >
                 <div>
                   <svg
                     className=""
