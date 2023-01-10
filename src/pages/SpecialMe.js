@@ -39,7 +39,7 @@ const SpecialMe = () => {
 
   return (
     <div className="container mx-auto p-4 h-screen ">
-      <div className="flex justify-between">
+      <div className="md:flex justify-between">
         <div className="mb-4">
           <h1 className="text-2xl font-bold">Bana Özel</h1>
         </div>

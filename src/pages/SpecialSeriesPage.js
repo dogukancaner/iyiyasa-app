@@ -76,7 +76,7 @@ const SpecialSeriesPage = () => {
   const [search, setSearch] = useState("");
   return (
     <div className="container mx-auto p-4">
-      <div className="flex justify-between">
+      <div className="md:flex justify-between">
         <div className="mb-2">
           <h1 className="text-2xl font-bold">Özel Seriler</h1>
         </div>
