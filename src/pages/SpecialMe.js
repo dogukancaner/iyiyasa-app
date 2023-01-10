@@ -43,7 +43,7 @@ const SpecialMe = () => {
         <div className="mb-6">
           <h1 className="text-2xl font-bold">Bana Özel</h1>
         </div>
-        <div className="mb-4 pb-4 flex gap-4 border-b  border-gray-200 dark:border-gray-700">
+        <div className="mb-4 pb-4 flex gap-4 border-b border-gray-700">
           <div className="cursor-pointer">
             <svg
               className="text-gray-600r"
