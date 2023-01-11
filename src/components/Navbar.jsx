@@ -54,6 +54,10 @@ const Navbar = ({ users }) => {
           </div>
 
           <div className="hidden md:flex items-center gap-6">
+            {/* <div>
+              <span className="font-bold ml-2">{users?.email}</span>
+            </div> */}
+
             <Link aria-label="Hesabım" to="/signin">
               <svg
                 className=" text-gray-600  "
@@ -112,9 +116,6 @@ const Navbar = ({ users }) => {
                 />
               </svg>
             </Link>
-            <div>
-              <span className="font-bold ml-2">{users?.email}</span>
-            </div>
           </div>
           <div className="md:hidden">
             <button
@@ -275,7 +276,7 @@ const Navbar = ({ users }) => {
         </div>
         <div className="w-full h-full flex items-start">
           <ul className=" bg-gray-200 p-12 mt-4 flex flex-row justify-center gap-5 w-full">
-            <li>
+            {/* <li>
               <Link
                 className="flex items-center gap-2 "
                 to="/signin"
@@ -308,7 +309,7 @@ const Navbar = ({ users }) => {
                 </div>
                 <p className="font-medium text-gray-800 ">{users.email}</p>
               </Link>
-            </li>
+            </li> */}
             <li>
               <Link
                 className="flex items-center gap-2"
