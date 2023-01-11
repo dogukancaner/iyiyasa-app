@@ -4,7 +4,7 @@ import Logo2 from "../img/logo2.png";
 
 import { Link } from "react-router-dom";
 
-const Navbar = () => {
+const Navbar = ({ users }) => {
   const [showMenu, setShowMenu] = useState("");
 
   return (
@@ -52,6 +52,7 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
+
           <div className="hidden md:flex items-center gap-6">
             <Link aria-label="Hesabım" to="/signin">
               <svg
@@ -111,6 +112,9 @@ const Navbar = () => {
                 />
               </svg>
             </Link>
+            <div>
+              <span className="font-bold ml-2">{users?.email}</span>
+            </div>
           </div>
           <div className="md:hidden">
             <button
@@ -302,7 +306,7 @@ const Navbar = () => {
                     />
                   </svg>
                 </div>
-                <p className="font-medium text-gray-800 ">Hesabım</p>
+                <p className="font-medium text-gray-800 ">{users.email}</p>
               </Link>
             </li>
             <li>

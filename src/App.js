@@ -1,7 +1,11 @@
+import { useState, useEffect } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { lazy, Suspense } from "react";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+
+import { onAuthStateChanged } from "firebase/auth";
+import { auth } from "./firebase";
 
 const LazyHome = lazy(() => import("./pages/Home"));
 const LazyInstructorPages = lazy(() => import("./pages/InstructorPages"));
@@ -12,11 +16,20 @@ const LazySignUp = lazy(() => import("./pages/SignUp"));
 const LazySignIn = lazy(() => import("./pages/SignIn"));
 const LazyPricing = lazy(() => import("./pages/Pricing"));
 
-function App() {
+const App = () => {
+  const [users, setUser] = useState(null);
+  useEffect(() => {
+    onAuthStateChanged(auth, (user) => {
+      if (user) {
+        setUser(user);
+      } else {
+      }
+    });
+  });
   return (
     <div>
       <BrowserRouter>
-        <Navbar />
+        <Navbar users={users} />
         <Routes>
           <Route
             path="/"
@@ -135,6 +148,6 @@ function App() {
       </BrowserRouter>
     </div>
   );
-}
+};
 
 export default App;
