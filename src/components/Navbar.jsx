@@ -1,9 +1,7 @@
 import React, { useState } from "react";
 import Logo1 from "../img/logo1.png";
 import Logo2 from "../img/logo2.png";
-
 import { Link } from "react-router-dom";
-
 const Navbar = ({ users }) => {
   const [showMenu, setShowMenu] = useState("");
 
@@ -54,10 +52,6 @@ const Navbar = ({ users }) => {
           </div>
 
           <div className="hidden md:flex items-center gap-6">
-            {/* <div>
-              <span className="font-bold ml-2">{users?.email}</span>
-            </div> */}
-
             <Link aria-label="Hesabım" to="/signin">
               <svg
                 className=" text-gray-600  "
@@ -83,7 +77,6 @@ const Navbar = ({ users }) => {
                 />
               </svg>
             </Link>
-
             <Link aria-label="Sepet" to="/pricing">
               <svg
                 className=" text-gray-600"
@@ -116,6 +109,9 @@ const Navbar = ({ users }) => {
                 />
               </svg>
             </Link>
+            <div>
+              <span className="font-bold ml-2">{users?.email}</span>
+            </div>
           </div>
           <div className="md:hidden">
             <button
@@ -156,38 +152,6 @@ const Navbar = ({ users }) => {
             </button>
           </div>
         </div>
-        {/* <div className="mt-4 pb-4 flex gap-4 border-b border-gray-200 dark:border-gray-700">
-            <div>
-              <svg
-                className="text-gray-600"
-                width={20}
-                height={20}
-                viewBox="0 0 20 20"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M9 17C13.4183 17 17 13.4183 17 9C17 4.58172 13.4183 1 9 1C4.58172 1 1 4.58172 1 9C1 13.4183 4.58172 17 9 17Z"
-                  stroke="currentColor"
-                  strokeWidth="1.25"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-                <path
-                  d="M19.0004 19.0004L14.6504 14.6504"
-                  stroke="currentColor"
-                  strokeWidth="1.25"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
-            </div>
-            <input
-              type="text"
-              placeholder="Ara"
-              className="focus:outline-none bg-transparent text-sm text-gray-600"
-            />
-          </div> */}
       </div>
       <div
         id="mobile-menu"
@@ -276,7 +240,7 @@ const Navbar = ({ users }) => {
         </div>
         <div className="w-full h-full flex items-start">
           <ul className=" bg-gray-200 p-12 mt-4 flex flex-row justify-center gap-5 w-full">
-            {/* <li>
+            <li>
               <Link
                 className="flex items-center gap-2 "
                 to="/signin"
@@ -307,9 +271,9 @@ const Navbar = ({ users }) => {
                     />
                   </svg>
                 </div>
-                <p className="font-medium text-gray-800 ">{users.email}</p>
+                <p className="font-medium text-gray-800 ">Hesabım</p>
               </Link>
-            </li> */}
+            </li>
             <li>
               <Link
                 className="flex items-center gap-2"
@@ -351,7 +315,6 @@ const Navbar = ({ users }) => {
                 <p className="font-medium text-gray-800">Alışveriş</p>
               </Link>
             </li>
-            <li></li>
           </ul>
         </div>
       </div>
