@@ -2,9 +2,12 @@ import React, { useState } from "react";
 import Logo1 from "../img/logo1.png";
 import Logo2 from "../img/logo2.png";
 import { Link } from "react-router-dom";
+
+import { FiChevronDown } from "react-icons/fi";
+
 const Navbar = ({ users }) => {
   const [showMenu, setShowMenu] = useState("");
-
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <div className="container mx-auto relative">
       <div className="py-4 mx-4 md:mx-6">
@@ -52,7 +55,7 @@ const Navbar = ({ users }) => {
           </div>
 
           <div className="hidden md:flex items-center gap-6">
-            <Link aria-label="Hesabım" to="/signin">
+            {/* <Link aria-label="Hesabım" to="/signin">
               <svg
                 className=" text-gray-600  "
                 width={24}
@@ -108,9 +111,40 @@ const Navbar = ({ users }) => {
                   strokeLinejoin="round"
                 />
               </svg>
-            </Link>
-            <div>
-              <span className="font-bold ml-2">{users?.email}</span>
+            </Link> */}
+            <div className="relative">
+              <div className="flex justify-center items-center gap-2">
+                <button
+                  className="block rounded-md text-lg font-medium text-gray-600  focus:outline-none "
+                  onClick={() => setIsOpen(!isOpen)}
+                >
+                  Merhaba,<b className="font-bold"> İyi Yaşa'lı</b>
+                </button>
+                <FiChevronDown
+                  onClick={() => setIsOpen(!isOpen)}
+                  size={24}
+                  className="cursor-pointer text-gray-600 "
+                />
+              </div>
+
+              {isOpen && (
+                <div className="absolute w-full left-0 z-10 py-2 mt-3 bg-white rounded-md shadow-xl">
+                  <Link
+                    to="/signin"
+                    className="block text-center px-4 py-2 text-md text-gray-700 hover:bg-gray-100 duration-700"
+                    onClick={() => setIsOpen(!isOpen)}
+                  >
+                    Giriş Yap
+                  </Link>
+                  <Link
+                    to="/pricing"
+                    className="block text-center px-4 py-2 text-md text-gray-700 hover:bg-gray-100 duration-700"
+                    onClick={() => setIsOpen(!isOpen)}
+                  >
+                    Alışveriş
+                  </Link>
+                </div>
+              )}
             </div>
           </div>
           <div className="md:hidden">
@@ -238,7 +272,40 @@ const Navbar = ({ users }) => {
             </li>
           </ul>
         </div>
-        <div className="w-full h-full flex items-start">
+        <div className="relative flex justify-center py-6  mt-2">
+          <div className="flex justify-center items-center gap-2">
+            <button
+              className="block rounded-md text-lg font-medium text-gray-600  focus:outline-none "
+              onClick={() => setIsOpen(!isOpen)}
+            >
+              Merhaba,<b className="font-bold"> İyi Yaşa'lı</b>
+            </button>
+            <FiChevronDown
+              onClick={() => setIsOpen(!isOpen)}
+              size={24}
+              className="cursor-pointer text-gray-600 "
+            />
+          </div>
+          {isOpen && (
+            <div className="absolute  w-full left-0 z-10 py-2 mt-6 bg-transparent rounded-md shadow-xl">
+              <Link
+                to="/signin"
+                className="block text-center px-4 py-2 text-md text-gray-700 hover:bg-gray-100 duration-700"
+                onClick={() => setShowMenu(false)}
+              >
+                Giriş Yap
+              </Link>
+              <Link
+                to="/pricing"
+                className="block text-center px-4 py-2 text-md text-gray-700 hover:bg-gray-100 duration-700"
+                onClick={() => setShowMenu(false)}
+              >
+                Alışveriş
+              </Link>
+            </div>
+          )}
+        </div>
+        {/* <div className="w-full h-full flex items-start">
           <ul className=" bg-gray-200 p-12 mt-4 flex flex-row justify-center gap-5 w-full">
             <li>
               <Link
@@ -316,7 +383,7 @@ const Navbar = ({ users }) => {
               </Link>
             </li>
           </ul>
-        </div>
+        </div> */}
       </div>
     </div>
   );
