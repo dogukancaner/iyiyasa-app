@@ -290,14 +290,14 @@ const Navbar = ({ users }) => {
             <div className="absolute  w-full left-0 z-10 py-2 mt-6 bg-transparent rounded-md shadow-xl">
               <Link
                 to="/signin"
-                className="block text-center px-4 py-2 text-md text-gray-700 hover:bg-gray-100 duration-700"
+                className="block text-center px-4 py-2 text-md font-medium text-gray-700 hover:bg-gray-100 duration-700"
                 onClick={() => setShowMenu(false)}
               >
                 Giriş Yap
               </Link>
               <Link
                 to="/pricing"
-                className="block text-center px-4 py-2 text-md text-gray-700 hover:bg-gray-100 duration-700"
+                className="block text-center px-4 py-2 text-md font-medium text-gray-700 hover:bg-gray-100 duration-700"
                 onClick={() => setShowMenu(false)}
               >
                 Alışveriş
