@@ -62,7 +62,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="text-center p-6">
-          <span>© 2022 Copyright </span>
+          <span>© 2023 Copyright </span>
           <a
             className="text-gray-600 font-semibold"
             href="https://www.iyiyasa.com/"
