@@ -15,7 +15,7 @@ const LazySpecialMe = lazy(() => import("./pages/SpecialMe"));
 const LazySignUp = lazy(() => import("./pages/SignUp"));
 const LazySignIn = lazy(() => import("./pages/SignIn"));
 const LazyPricing = lazy(() => import("./pages/Pricing"));
-
+const LazyErrorPage = lazy(() => import("./pages/ErrorPage"));
 const App = () => {
   const [users, setUser] = useState(null);
   useEffect(() => {
@@ -140,6 +140,20 @@ const App = () => {
                 }
               >
                 <LazyPricing />
+              </Suspense>
+            }
+          />
+          <Route
+            path="*"
+            element={
+              <Suspense
+                fallback={
+                  <div className="text-center text-2xl font-medium ">
+                    Yükleniyor...
+                  </div>
+                }
+              >
+                <LazyErrorPage />
               </Suspense>
             }
           />
