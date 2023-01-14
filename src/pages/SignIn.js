@@ -3,7 +3,7 @@ import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../firebase";
 import { Link } from "react-router-dom";
 import GoogleAuth from "../auth/GoogleAuth";
-const SıgnUp = () => {
+const SignUp = () => {
   const [authData, setAuthData] = useState({
     email: "",
     password: "",
@@ -70,4 +70,4 @@ const SıgnUp = () => {
   );
 };
 
-export default SıgnUp;
+export default SignUp;
